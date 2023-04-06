@@ -17,7 +17,7 @@ Codes in Python
 English
 
 Project in development for the object-oriented programming course in Python at the Federal University of Santa Catarina (UFSC).
-It is about concepts and applications of basic functions such as if elif, else and for, repetition pressures while, manipulation of strings and resolution of problems proposed by the beecrowd platform.
+It is about concepts and applications of statements such as if elif, else and loops with for and while , manipulation of strings and resolution of problems proposed by the beecrowd platform.
 
 In the PythonCodes folder there are concepts and applications of the principles of Big Data, Internet of Things, distributed computing, cloud platforms, processing and data flow.
 
@@ -26,7 +26,7 @@ In the PythonCodes folder there are concepts and applications of the principles 
 Português-Br
 
 Projeto em desenvolvimento para a disciplina de programação orientada a objetos em Python da Universidade Federal de Santa Catarina (UFSC).
-Trata-se de conceitos e aplicações de funções básicas como if elif, else e for, laços de repetições utilizando while, manipulação de strings e rsolução de problemas propostos pela plataforma beecrowd.
+Trata-se de conceitos e aplicações de funções básicas como if, elif, else, laços de repetições utilizando while e for, manipulação de strings e rsolução de problemas propostos pela plataforma beecrowd.
 
 
 Na pasta PythonCodes há conceitos e aplicações dos princípios de Big Data, Internet das Coisas, computação distribuída, plataformas em nuvem, processamento e fluxo de dados.
