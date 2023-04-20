@@ -1,0 +1,94 @@
+# Uso de Lista e Tupla 
+# Implemente um sistema que manipule as notas 
+# de n aluno(s). Cada aluno tem 3 Notas. 
+# Restrição de entrada: 0 <= Nota <= 10 
+# O programa deve solicitar: o número de alunos 
+# da turma, o nome e as respectivas notas 
+# para cada aluno. 
+# Ações esperadas: 
+# a) Indicar a média do aluno; 
+# b) Indicar a maior nota; 
+# c) Indicar a menor nota. 
+# d) Retorna a diferença entre a maior e a menor nota. 
+# Considerar que não existem notas iguais.
+
+print("="*30)
+print("   Sistema de Notas")
+print("="*30)
+
+#Declaracao de variaveis globais
+alunos=[]
+
+    #Funcao para solicitar as notas e checar os valores das notas atraves
+    # do laco de repetição while com o paremetro True
+def check_notas():
+    while True:
+        nota= int(input("Informe a nota: "))
+            #Teste do valor da nota com a estrutura condicional IF
+        if 0 <= nota <= 10:
+                #Caso a condicao retorne true retorna o 
+                # valor da variavel nota e finaliza o laço
+            return(nota)
+            break
+        else:
+                #Caso retorne false informa o erro e repete o laço
+            print("Nota não esta entre 0 e 10, Digite novamente: ")
+#main
+    #Inicia-se solicitando o numero de vezes que será entrado com os dados
+n = int(input("Informe a quatidade de alunos: "))
+
+    #laco de repeticao com FOR para repetir de acordo com o valor 
+    # na variavel n
+for i in range(n):
+    nome = input("Digite o nome do aluno {}: ".format(i+1))
+        #Para cada entrada de notas faz-se uma chamada na funcao 
+        # check_notas e cada nota é armazenada em uma variavel
+    nota1 = (check_notas())
+    nota2 = (check_notas())
+    nota3 = (check_notas())
+        #Adiciona-se os valores das variaveis na lista alunos 
+        # com a funcao .append e passando os todos valores em 
+        # como uma unica lista a cada iteracao
+    alunos.append((nome, nota1, nota2, nota3))
+    
+
+    #Laco de repeticao com FOR para iterar sobre a lista alunos
+    #A cada iteracao ira atribuir o primeiro elemento da lista
+    # a variavel nome e os demais a lista notas
+for aluno in alunos:
+    nome = aluno[0]
+    notas = aluno[1:]
+    # Calcula a média das notas do aluno
+    media = sum(notas) / len(notas)
+        
+     # Encontra a maior e a menor nota do aluno
+     #Estacia-se duas variaveis auxiliares que 
+     # receberam o primeiro elemento da lista notas
+    maior_nota = notas[0]
+    menor_nota = notas[0]
+     #Laco de repeticao com FOR para iterar sobre a lista notas
+     # o indice nota recebe os elementos da lista notas
+    for nota in notas:
+         #Estrutura consicional para verificar se o elemnto percorrido 
+         # pelo FOR e maior ou menor que o da variavel e caso retorne 
+         # TRUE altera o valor das variaveis 
+        if nota > maior_nota:
+            maior_nota = nota
+        if nota < menor_nota:
+            menor_nota = nota
+    
+         
+        # Calcula a diferença entre a maior e a menor nota
+    diferenca = maior_nota - menor_nota
+    
+        # Imprime os resultados para o aluno
+    print("Aluno: {}".format(nome))
+    print("Média: {:.2f}".format(media))
+    print("Maior nota: {:.2f}".format(maior_nota))
+    print("Menor nota: {:.2f}".format(menor_nota))
+    print("Diferença entre a maior e a menor nota: {:.2f}".format(diferenca))
+    print()
+
+print("="*30)
+print("    Programa encerrado!")
+print("="*30)

@@ -319,3 +319,11 @@
 # # saída
 # print("Os números em ordem crescente são:", a, b, c)
 
+alunos=[("ana", "bia", "carla"), ("duda", "ema", "fabia")]
+
+for aluno in alunos:
+    nome = aluno[0]
+    print(f"variavel aluno {aluno}")
+    print(f"Variavel nome: {nome}")
+    notas = aluno[1:]
+    print(f"Variavel notas: {notas}")

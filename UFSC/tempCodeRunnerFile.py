@@ -1,14 +1,21 @@
-#############################################################################    
-#     #Exercircio 04
-# #beecrowd | 1075
-# #Remaining 2
+print("="*30)
+print("      PRIMO É PARENTE")
+print("="*30)
+  
+numero = int(input("Informe um número inteiro: "))
 
-# print("="*30)
-# print("      Remaining 2")
-# print("="*30)
-# #Entrada para verificação
-# n = int(input("Digite um número inteiro menor que 10000: "))
-# #Incrementando o contador com a função FOR
-# for i in range(1, 10001):
-#     if i % n == 2: #Sempre que o resto da divisão for igual a 2
-#         print(i)   #Imprime o numero o contador
+if numero < 2:
+    print("O número não é primo.")
+else:
+    eh_primo = True
+    for divisor in range(2, numero):
+        if numero % divisor == 0:
+            eh_primo = False
+            break
+    if eh_primo:
+        print("O número é primo.")
+    else:
+        print("O número não é primo.")
+        for i in range(2, numero):
+            if numero % i == 0:
+                print(i)

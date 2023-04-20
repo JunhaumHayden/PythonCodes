@@ -1,0 +1,57 @@
+## Lista de Exercicios Lista e Tupla
+# Faça um programa que leia uma série de números inteiros e os armazene em uma 
+# lista. Em seguida, o programa deve determinar se nessa série de valores aparece 
+# algum valor repetido. 
+# Mostrar mensagem dizendo se existe ou não um número repetido! 
+# O número de elementos é definido pelo usuário. 
+
+
+print("="*30)
+print("    Questao 02")
+print("="*30)   
+
+# Declara-se variáveis globais
+numeros = []
+# Laco de repeticao com WHILE 
+# para receber os valores do usuario e 
+# inserir na lista numeros. 
+# Criterio de parada 0 (ZERO)
+while True:
+    num = int(input("Digite um número inteiro (Zero para encerrar): "))
+    if num == 0:
+        break
+    else:
+        numeros.append(num)
+ # Variavel auxiliar para marcar se há repetição ou não.
+ # Recebe valor inicial FALSE e caso encontre valor 
+ # repetido recebe o valor TRUE
+repetidos = False
+ #Laco de repeticao com FOR para percorrer a lista numeros
+for i in range(len(numeros)):
+     # Laco de repeticao com FOR para 
+     # percorre a lista apartir da posicao 
+     # atual do elemento (i + 1) da lista numeros em que o loop 
+     # FOR anterior (com variavel de indice i) esta.
+    for j in range(i+1, len(numeros)):
+         #Estrutura condicional com IF para 
+         # comparar o valor do elemento de indice i (elemento atual 
+         # do FOR com variavel de indice i) com os elementos a 
+         # direita da lista numero (elemento percorrido pelo FOR 
+         # de indice j)
+        if numeros[i] == numeros[j]:
+            repetidos = True
+            break
+
+if repetidos:
+    print()
+    print("*"*40)
+    print("  Há números repetidos na lista.")
+    print("*"*40)       
+else:
+    print()
+    print("*"*40)
+    print("  Não há números repetidos na lista.")
+    print("*"*40)
+print("="*30)
+print("    Programa encerrado!")
+print("="*30)
