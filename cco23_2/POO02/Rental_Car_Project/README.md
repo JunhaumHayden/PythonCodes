@@ -111,15 +111,11 @@ A locadora opera de maneira eficiente para garantir que cada cliente tenha uma e
 7. **Notificações e Comunicação:**
    - Capacidade de enviar notificações por e-mail ou SMS para confirmar reservas, datas de retirada/devolução e detalhes da locação.
 
-8. **Sistema de Inspeção de Veículos:**
-   - Funcionalidade para realizar e registrar inspeções de pré-retirada e pós-devolução de veículos.
-   - Geração de relatórios detalhados sobre o estado do veículo, incluindo danos pré-existentes.
-
-9. **Gestão de Devoluções:**
+8. **Gestão de Devoluções:**
    - Processo de devolução simplificado, incluindo inspeção final do veículo.
    - Cálculo e processamento de taxas adicionais, se necessário.
 
-10. **Relatórios e Análises:**
+9.  **Relatórios e Análises:**
     - Geração de relatórios que mostram o desempenho da locadora, incluindo taxas de ocupação, receitas e muito mais.
 
 
