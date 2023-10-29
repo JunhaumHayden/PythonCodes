@@ -132,7 +132,7 @@ if __name__ == "__main__":
 
     print("\nDados na ordem inversa à ordem lida:")
 
-    for i in range(num_alunos, -1, -1):
+    for i in range(len(idades), -1, -1):
         print(f"Aluno {i + 1} - Idade: {idades[i]} anos, Altura: {alturas[i]:.2f} metros")
         for j in range(len(notas[i])):
             print(f'nota {j +1} do aluno {i +1}')
