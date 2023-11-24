@@ -1,1 +1,5 @@
-{"ANA": "1010-11111", "BIA": "2020-2222"}
+{
+    "usuario1": "senha1",
+    "usuario2": "senha2",
+    "admin": "adminsenha"
+}

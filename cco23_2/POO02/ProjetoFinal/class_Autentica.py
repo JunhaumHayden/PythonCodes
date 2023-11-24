@@ -66,6 +66,7 @@ class Sistema:
                 print("Autenticação falhou para o perfil de funcionário.")
         else:
             print("Perfil não encontrado.")
+            return 'Perfil não encontrado.'
 
     def __str__(self):
         print(self.usuarios)

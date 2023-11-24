@@ -54,7 +54,7 @@ def GetOneCardFromCurrentDeck():
         card = gCurrentDeck[idx]
     except IndexError as e:
         print("Length of deck: " + str(len(gCurrentDeck)))
-        #print(e)
+        print(e)
         sys.exit(0)
         #for eachCard in gCurrentDeck:
             #print str(eachCard.value) + eachCard.suite

@@ -1,8 +1,11 @@
-
+#from class_Autentica import Usuario
+#from class_Autentica import Funcionario
 from class_Autentica import *
 from class_sistema import *
+#from class_sistema import Cliente
+#from class_sistema import OrdemServico
+#from class_sistema import Servico
 #from sistemaGUI import *
-from Tela import *
 
 
 
@@ -124,14 +127,13 @@ def menu_usuario(client_id):
     while True: 
     
         printing("    Menu Usuario-tela")
-        screen.msg11['text'] = 'Menu Usuario'
+    
         while True:
             #Tratamento de excecao
             try:
                 
                 n = int(input(' 1 - Ordem de Serviço \n 2 - Cadastrar Veiculo \n 3 - Consultar OS \n 4 - Menu 04 \n 5 - Menu 05 \n 0 - #Encerrar \n Opção: '))
-                #screen.titulo['text'] = ' 1 - Ordem de Serviço \n 2 - Cadastrar Veiculo \n 3 - Consultar OS \n 4 - Menu 04 \n 5 - Menu 05 \n 0 - #Encerrar \n Opção: '
-                #n = screen.stringEmail.get()
+                
                 break
             except ValueError:
                 print("Entrada inválida. Certifique-se de fornecer os valores corretos.")
@@ -535,18 +537,15 @@ def cadastro():
 # Exemplo de uso
 
 def verifica_login():
-    print(screen.stringUsername.get())
-    a = sistema.autenticar_e_acessar_ambiente(screen.stringUsername.get(), screen.stringPassword.get())
-    print(a)
+    a = sistema.autenticar_e_acessar_ambiente(screen.username.get(), screen.password.get())
         
     
     if a == 1:               
-        if screen.stringUsername.get() == "user1":
-            print(screen.stringUsername.get())
+        if screen.username.get() == "user1":
             screen.msg['text'] = 'USER1'
             screen.msg02['text'] = 'Bem-vindo ao ambiente do tela!'
             menu_usuario(0)
-        elif screen.stringUsername.get() == "user2":
+        elif screen.username.get() == "user2":
             menu_usuario(1)
         elif a == 2:
             print('Menu Funcionario')
@@ -564,46 +563,35 @@ if __name__ == '__main__':
     inicializarAutent()
     inicializarSitema()
 
-    screen = SistemaGUI()
+    #screen = SistemaGUI()
+    #userscreen.mainloop()
+    
+    while True:
+        print('-'*30)
+        print("Para Usuario: user1, password1")
+        print("Para Funcionario: employee1, password3")
+        print('-'*30)
+        print("\nUsuário 1:")
+        user=input("Login: ")
+        password=input("Senha: ")
 
-    screen.mainloop()
-
-
-
-    # pass
-    # while True:
-    #     pass
-    #     print('-'*30)
-    #     print("Para Usuario: user1, pwd1")
-    #     print("Para Funcionario: employee1, password3")
-    #     print('-'*30)
-    #     print("\nUsuário 1111:")
-    #     user=input("Login: ")
-    #     password=input("Senha: ")
-
-    #     a = sistema.autenticar_e_acessar_ambiente(user, password)
+        a = sistema.autenticar_e_acessar_ambiente(user, password)
        
-    #     if a == 1:
-    #         if user == "user1":
-    #             menu_usuario(0)
-    #         elif user == "user2":
-    #             menu_usuario(1)
-    #     elif a == 2:
-    #         menu_func()
-    #     flag = input("Deseja continuar? ? (s ou n)").lower()
-    #     if flag != 's':
+        if a == 1:
+            if user == "user1":
+                menu_usuario(0)
+            elif user == "user2":
+                menu_usuario(1)
+        elif a == 2:
+            menu_func()
+        flag = input("Deseja continuar? ? (s ou n)").lower()
+        if flag != 's':
 
-    #         #print("if")
-    #         break
-    #     else:
-    #         #print("else")
-    #         continue
+            #print("if")
+            break
+        else:
+            #print("else")
+            continue
 
 
-    # Tentar acessar ambiente de funcionário com credenciais de usuário
-    #print("\nTentativa de acessar ambiente de funcionário com credenciais de usuário:")
-    #sistema.autenticar_e_acessar_ambiente("user1", "password3")
 
-    # Autenticar e acessar ambiente do funcionário
-    #print("\nFuncionário 1:")
-    #sistema.autenticar_e_acessar_ambiente("employee1", "password3")

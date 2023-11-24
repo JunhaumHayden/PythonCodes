@@ -34,8 +34,8 @@ def read_file():
 def add_file_json():
     contatos = {}
     contatos['ANA'] = '1010-11111'
-    contatos['BIA'] = '2020-2222'
-    f = open('listaTelefonica.txt','w')
+    contatos['BIA'] = 'agora'
+    f = open('listaTelefonicaa.txt','w')
     json.dump(contatos, f)
     f.close()
 

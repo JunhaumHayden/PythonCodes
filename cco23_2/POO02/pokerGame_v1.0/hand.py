@@ -22,8 +22,8 @@ class Hand:
     self.player_list = [self.p1, self.p2]
     self.dealer = Dealer(self.player_list, self.flop)
 
+# Draw cards at current positions
   def render_cards(self):
-    # Draw cards at current positions
     for player in self.player_list:
       for card in player.cards:
         self.display_surface.blit(card.card_surf, card.start_position)
