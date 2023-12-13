@@ -1,15 +1,43 @@
 
-
-
-
-class Usuario:
-    """Classe para instanciar Usuarios comuns ao sistema"""
-    def __init__(self, username, senha):
+class Funcionario:
+     
+     """Classe para instanciar funcionários"""
+     def __init__(self, username, password):
         self.username = username
-        self.senha = senha
+        self.password = password
+
+     def get_username(self):
+        return self.username
+     def set_username(self, username):
+        self.username = username
+
+     def get_password(self):
+        return self.password
+     def set_password(self, password):
+        self.password = password
+
+     def autenticar(self, username, senha):
+        return self.username == username and self.senha == senha
+
+     def acessar_ambiente(self):
+        print("Bem-vindo ao ambiente do funcionário!")
+        return 2
+
+
+class Usuario(Funcionario):
+    """Classe para instanciar clientes"""
+    def __init__(self, username, password, cliente_id):
+        super().__init__(username, password)
+        self.cliente_id = cliente_id
+
+    def get_cliente_id(self):
+        return self.cliente_id
+    
+    def set_cliente_id(self, cliente_id):
+        self.cliente_id = cliente_id
 
     def autenticar(self, username, senha):
-        return self.username == username and self.senha == senha
+        return self.password == username and self.senha == senha
 
     def acessar_ambiente(self):
         print("Bem-vindo ao ambiente do usuário!")
@@ -18,21 +46,6 @@ class Usuario:
 
     def __str__(self) -> str:
         pass
-
-
-class Funcionario:
-    """Classe para instanciar Usuarios com acesso privilegiado ao sistema"""
-    def __init__(self, username, senha):
-        self.username = username
-        self.senha = senha
-
-    def autenticar(self, username, senha):
-        return self.username == username and self.senha == senha
-
-    def acessar_ambiente(self):
-        print("Bem-vindo ao ambiente do funcionário!")
-        return 2
-
         
 
 
@@ -41,8 +54,8 @@ class Sistema:
         self.usuarios = {}  # Dicionário para armazenar usuários e senhas
         self.funcionarios = {}  # Dicionário para armazenar funcionários e senhas
 
-    def adicionar_usuario(self, username, senha):
-        self.usuarios[username] = Usuario(username, senha)
+    def adicionar_usuario(self, username, senha, id):
+        self.usuarios[username] = Usuario(username, senha, id)
 
     def adicionar_funcionario(self, username, senha):
         self.funcionarios[username] = Funcionario(username, senha)
@@ -70,12 +83,7 @@ class Sistema:
 
     def __str__(self):
         print(self.usuarios)
-        pass
-        #super().__str__()
-        #for i in range(len(usuarios)):
-        #    print("="*30)
-        #   print(f'ID: {i}')
-        #    print("="*30)
+        
                             
 #main - APP
 

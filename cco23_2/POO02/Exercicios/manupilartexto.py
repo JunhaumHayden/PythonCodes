@@ -35,12 +35,12 @@ def add_file_json():
     contatos = {}
     contatos['ANA'] = '1010-11111'
     contatos['BIA'] = 'agora'
-    f = open('./lista.json','w')
+    f = open('.lista.json','w')
     json.dump(contatos, f)
     f.close()
 
 def read_file_json():
-    f = open('./lista.json', 'r')
+    f = open('.lista.json', 'r')
     contatos = json.load(f)
     f.close
     for nome, telefone in contatos.items():

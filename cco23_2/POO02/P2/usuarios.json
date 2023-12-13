@@ -1,7 +1,10 @@
 {
-    "user1": "senha",
-    "user2": "senha",
-    "user3": "senha",
-    "admin": "adminsenha"
-  }
-  
+    "cliente": {
+        "cliente1": "senha",
+        "cliente2": "senha"
+    },
+    "funcionario": {
+        "funcionario1": "senha",
+        "funcionario2": "senha"
+    }
+}

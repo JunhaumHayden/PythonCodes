@@ -2,7 +2,7 @@ import tkinter as tk
 from tkinter import ttk, messagebox
 import json
 from datetime import datetime
-import requests
+
 from GoogleNews import GoogleNews
 import pandas as pd
 #######

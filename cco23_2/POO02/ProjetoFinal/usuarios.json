@@ -1,0 +1,22 @@
+{
+    "cliente": {
+        "cliente1": {
+            "senha": "senha1",
+            "id": 1
+        },
+        "cliente2": {
+            "senha": "senha2",
+            "id": 2
+        }
+    },
+    "funcionario": {
+        "funcionario1": {
+            "senha": "senha3",
+            "id": 3
+        },
+        "funcionario2": {
+            "senha": "senha4",
+            "id": 4
+        }
+    }
+}

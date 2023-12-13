@@ -1,0 +1,1166 @@
+[
+  {
+    "data": "2023-12-04 13:49:16",
+    "message": "Interface do cliente Aberta ID: 1"
+  },
+  {
+    "data": "2023-12-04 13:49:20",
+    "message": "Acessado Menu principal opcao01"
+  },
+  {
+    "data": "2023-12-04 13:49:20",
+    "message": "Acessado Menu Oredem de servico"
+  },
+  {
+    "data": "2023-12-04 13:49:24",
+    "message": "Acessado Menu Ordem de Servico: Opcao 1"
+  },
+  {
+    "data": "2023-12-04 13:50:36",
+    "message": "Acessado Menu principal opcao01"
+  },
+  {
+    "data": "2023-12-04 13:50:36",
+    "message": "Acessado Menu Oredem de servico"
+  },
+  {
+    "data": "2023-12-04 13:50:42",
+    "message": "Acessado Menu Ordem de Servico: Opcao 1"
+  },
+  {
+    "data": "2023-12-04 13:50:48",
+    "message": "Acessado Menu principal opcao01"
+  },
+  {
+    "data": "2023-12-04 13:50:48",
+    "message": "Acessado Menu Oredem de servico"
+  },
+  {
+    "data": "2023-12-04 13:52:28",
+    "message": "Acessado Menu Ordem de Servico: Opcao 2"
+  },
+  {
+    "data": "2023-12-04 13:54:28",
+    "message": "Interface do cliente Aberta ID: 1"
+  },
+  {
+    "data": "2023-12-04 13:54:32",
+    "message": "Acessado Menu principal opcao01"
+  },
+  {
+    "data": "2023-12-04 13:54:32",
+    "message": "Acessado Menu Oredem de servico"
+  },
+  {
+    "data": "2023-12-04 13:55:04",
+    "message": "Acessado Menu Ordem de Servico: Opcao 2"
+  },
+  {
+    "data": "2023-12-04 13:57:41",
+    "message": "Interface do cliente Aberta ID: 1"
+  },
+  {
+    "data": "2023-12-04 13:57:50",
+    "message": "Acessado Menu principal opcao01"
+  },
+  {
+    "data": "2023-12-04 13:57:50",
+    "message": "Acessado Menu Oredem de servico"
+  },
+  {
+    "data": "2023-12-04 13:58:00",
+    "message": "Acessado Menu Ordem de Servico: Opcao 2"
+  },
+  {
+    "data": "2023-12-04 13:58:04",
+    "message": "Acessado Menu Ordem de Servico: Opcao 2"
+  },
+  {
+    "data": "2023-12-04 13:58:31",
+    "message": "Interface do cliente Aberta ID: 1"
+  },
+  {
+    "data": "2023-12-04 13:58:35",
+    "message": "Acessado Menu principal opcao01"
+  },
+  {
+    "data": "2023-12-04 13:58:35",
+    "message": "Acessado Menu Oredem de servico"
+  },
+  {
+    "data": "2023-12-04 13:58:37",
+    "message": "Acessado Menu Ordem de Servico: Opcao 1"
+  },
+  {
+    "data": "2023-12-04 14:07:45",
+    "message": "Interface do cliente Aberta ID: 0"
+  },
+  {
+    "data": "2023-12-04 14:07:49",
+    "message": "Acessado Menu principal opcao01"
+  },
+  {
+    "data": "2023-12-04 14:07:49",
+    "message": "Acessado Menu Oredem de servico"
+  },
+  {
+    "data": "2023-12-04 14:07:54",
+    "message": "Acessado Menu Ordem de Servico: Opcao 2"
+  },
+  {
+    "data": "2023-12-04 14:07:58",
+    "message": "Interface do cliente Aberta ID: 0"
+  },
+  {
+    "data": "2023-12-04 14:19:11",
+    "message": "Interface do cliente Aberta ID: 0"
+  },
+  {
+    "data": "2023-12-04 14:19:15",
+    "message": "Acessado Menu principal opcao01"
+  },
+  {
+    "data": "2023-12-04 14:19:15",
+    "message": "Acessado Menu Oredem de servico"
+  },
+  {
+    "data": "2023-12-04 14:19:21",
+    "message": "Acessado Menu Ordem de Servico: Opcao 2"
+  },
+  {
+    "data": "2023-12-04 14:26:43",
+    "message": "Interface do cliente Aberta ID: 0"
+  },
+  {
+    "data": "2023-12-04 14:26:46",
+    "message": "Acessado Menu principal opcao01"
+  },
+  {
+    "data": "2023-12-04 14:26:46",
+    "message": "Acessado Menu Oredem de servico"
+  },
+  {
+    "data": "2023-12-04 14:26:48",
+    "message": "Acessado Menu Ordem de Servico: Opcao 1"
+  },
+  {
+    "data": "2023-12-04 14:30:59",
+    "message": "Interface do cliente Aberta ID: 0"
+  },
+  {
+    "data": "2023-12-04 14:31:03",
+    "message": "Acessado Menu principal opcao01"
+  },
+  {
+    "data": "2023-12-04 14:31:03",
+    "message": "Acessado Menu Oredem de servico"
+  },
+  {
+    "data": "2023-12-04 14:31:05",
+    "message": "Acessado Menu Ordem de Servico: Opcao 1"
+  },
+  {
+    "data": "2023-12-04 14:31:29",
+    "message": "Interface do cliente Aberta ID: 0"
+  },
+  {
+    "data": "2023-12-04 14:31:33",
+    "message": "Acessado Menu principal opcao01"
+  },
+  {
+    "data": "2023-12-04 14:31:33",
+    "message": "Acessado Menu Oredem de servico"
+  },
+  {
+    "data": "2023-12-04 14:31:35",
+    "message": "Acessado Menu Ordem de Servico: Opcao 1"
+  },
+  {
+    "data": "2023-12-04 14:31:54",
+    "message": "Interface do cliente Aberta ID: 0"
+  },
+  {
+    "data": "2023-12-04 15:48:45",
+    "message": "Interface do cliente Aberta ID: 0"
+  },
+  {
+    "data": "2023-12-04 15:48:49",
+    "message": "Acessado Menu principal opcao01"
+  },
+  {
+    "data": "2023-12-04 15:48:49",
+    "message": "Acessado Menu Oredem de servico"
+  },
+  {
+    "data": "2023-12-04 15:48:59",
+    "message": "Acessado Menu Ordem de Servico: Opcao 1"
+  },
+  {
+    "data": "2023-12-04 15:49:02",
+    "message": "Interface do cliente Aberta ID: 0"
+  },
+  {
+    "data": "2023-12-04 15:49:16",
+    "message": "Acessado Menu principal opcao01"
+  },
+  {
+    "data": "2023-12-04 15:49:16",
+    "message": "Acessado Menu Oredem de servico"
+  },
+  {
+    "data": "2023-12-04 15:49:20",
+    "message": "Acessado Menu Ordem de Servico: Opcao 1"
+  },
+  {
+    "data": "2023-12-04 15:49:22",
+    "message": "Interface do cliente Aberta ID: 0"
+  },
+  {
+    "data": "2023-12-04 16:11:16",
+    "message": "Interface do cliente Aberta ID: 0"
+  },
+  {
+    "data": "2023-12-04 16:11:27",
+    "message": "Acessado Menu principal opcao01"
+  },
+  {
+    "data": "2023-12-04 16:11:27",
+    "message": "Acessado Menu Oredem de servico"
+  },
+  {
+    "data": "2023-12-04 16:11:39",
+    "message": "Acessado Menu Ordem de Servico: Opcao 1"
+  },
+  {
+    "data": "2023-12-04 16:11:53",
+    "message": "Acesso ao Menu Principal\n Seu ID \u00e9: 0"
+  },
+  {
+    "data": "2023-12-04 16:12:06",
+    "message": "Acessado Menu principal opcao01"
+  },
+  {
+    "data": "2023-12-04 16:12:06",
+    "message": "Acessado Menu Oredem de servico"
+  },
+  {
+    "data": "2023-12-04 16:17:23",
+    "message": "Interface do cliente Aberta ID: 0"
+  },
+  {
+    "data": "2023-12-04 16:17:44",
+    "message": "Acessado Menu principal opcao01"
+  },
+  {
+    "data": "2023-12-04 16:17:44",
+    "message": "Acessado Menu Oredem de servico"
+  },
+  {
+    "data": "2023-12-04 16:17:50",
+    "message": "Acessado Menu Ordem de Servico: Opcao 5"
+  },
+  {
+    "data": "2023-12-04 16:19:26",
+    "message": "Interface do cliente Aberta ID: 0"
+  },
+  {
+    "data": "2023-12-04 16:19:29",
+    "message": "Acessado Menu principal opcao01"
+  },
+  {
+    "data": "2023-12-04 16:19:29",
+    "message": "Acessado Menu Oredem de servico"
+  },
+  {
+    "data": "2023-12-04 16:19:34",
+    "message": "Acessado Menu Ordem de Servico: Opcao 5"
+  },
+  {
+    "data": "2023-12-04 16:20:27",
+    "message": "Interface do cliente Aberta ID: 0"
+  },
+  {
+    "data": "2023-12-04 16:20:32",
+    "message": "Acessado Menu principal opcao01"
+  },
+  {
+    "data": "2023-12-04 16:20:32",
+    "message": "Acessado Menu Oredem de servico"
+  },
+  {
+    "data": "2023-12-04 16:20:38",
+    "message": "Acessado Menu Ordem de Servico: Opcao 5"
+  },
+  {
+    "data": "2023-12-04 16:20:48",
+    "message": "Acesso ao Menu Principal\n Seu ID \u00e9: 0"
+  },
+  {
+    "data": "2023-12-04 16:21:01",
+    "message": "Acessado Menu principal opcao01"
+  },
+  {
+    "data": "2023-12-04 16:21:01",
+    "message": "Acessado Menu Oredem de servico"
+  },
+  {
+    "data": "2023-12-04 16:21:09",
+    "message": "Acessado Menu Ordem de Servico: Opcao 5"
+  },
+  {
+    "data": "2023-12-04 16:21:57",
+    "message": "Acesso ao Menu Principal\n Seu ID \u00e9: 0"
+  },
+  {
+    "data": "2023-12-05 11:46:37",
+    "message": "Interface do cliente Aberta ID: 0"
+  },
+  {
+    "data": "2023-12-05 11:46:49",
+    "message": "Acessado Menu principal opcao01"
+  },
+  {
+    "data": "2023-12-05 11:46:49",
+    "message": "Acessado Menu Oredem de servico"
+  },
+  {
+    "data": "2023-12-05 11:46:55",
+    "message": "Acessado Menu Ordem de Servico: Opcao 1"
+  },
+  {
+    "data": "2023-12-05 11:46:59",
+    "message": "Acesso ao Menu Principal\n Seu ID \u00e9: 0"
+  },
+  {
+    "data": "2023-12-05 11:55:15",
+    "message": "Interface do cliente Aberta ID: 0"
+  },
+  {
+    "data": "2023-12-05 11:55:35",
+    "message": "Acessado Menu principal 1"
+  },
+  {
+    "data": "2023-12-05 11:55:35",
+    "message": "Acessado Menu Oredem de servico"
+  },
+  {
+    "data": "2023-12-05 11:55:50",
+    "message": "Acessado Menu Ordem de Servico: Opcao 2"
+  },
+  {
+    "data": "2023-12-05 11:55:53",
+    "message": "Acesso ao Menu Principal\n Seu ID \u00e9: 0"
+  },
+  {
+    "data": "2023-12-05 11:56:27",
+    "message": "Acessado Menu principal 3"
+  },
+  {
+    "data": "2023-12-05 11:57:58",
+    "message": "Interface do cliente Aberta ID: 0"
+  },
+  {
+    "data": "2023-12-05 11:58:09",
+    "message": "Acessado Menu principal 2"
+  },
+  {
+    "data": "2023-12-05 11:59:02",
+    "message": "Interface do cliente Aberta ID: 0"
+  },
+  {
+    "data": "2023-12-05 11:59:05",
+    "message": "Acessado Menu principal 2"
+  },
+  {
+    "data": "2023-12-05 11:59:26",
+    "message": "Interface do cliente Aberta ID: 0"
+  },
+  {
+    "data": "2023-12-05 11:59:30",
+    "message": "Acessado Menu principal 2"
+  },
+  {
+    "data": "2023-12-05 12:00:02",
+    "message": "Interface do cliente Aberta ID: 0"
+  },
+  {
+    "data": "2023-12-05 12:00:09",
+    "message": "Acessado Menu principal 2"
+  },
+  {
+    "data": "2023-12-05 12:00:20",
+    "message": "Acessado Menu principal 3"
+  },
+  {
+    "data": "2023-12-05 12:02:15",
+    "message": "Interface do cliente Aberta ID: 0"
+  },
+  {
+    "data": "2023-12-05 12:02:19",
+    "message": "Acessado Menu principal 1"
+  },
+  {
+    "data": "2023-12-05 12:02:19",
+    "message": "Acessado Menu Oredem de servico"
+  },
+  {
+    "data": "2023-12-05 12:03:26",
+    "message": "Interface do cliente Aberta ID: 0"
+  },
+  {
+    "data": "2023-12-05 12:03:30",
+    "message": "Acessado Menu principal 1"
+  },
+  {
+    "data": "2023-12-05 12:03:30",
+    "message": "Acessado Menu Oredem de servico"
+  },
+  {
+    "data": "2023-12-05 12:03:38",
+    "message": "Acessado Menu Ordem de Servico: Opcao 1"
+  },
+  {
+    "data": "2023-12-05 12:03:49",
+    "message": "Acesso ao Menu Principal\n Seu ID \u00e9: 0"
+  },
+  {
+    "data": "2023-12-06 09:52:07",
+    "message": "Interface do cliente Aberta ID: 0"
+  },
+  {
+    "data": "2023-12-06 09:52:27",
+    "message": "Acessado Menu principal 1"
+  },
+  {
+    "data": "2023-12-06 09:52:27",
+    "message": "Acessado Menu Oredem de servico"
+  },
+  {
+    "data": "2023-12-06 09:52:44",
+    "message": "Acessado Menu Ordem de Servico: Opcao 2"
+  },
+  {
+    "data": "2023-12-06 09:52:51",
+    "message": "Acesso ao Menu Principal\n Seu ID \u00e9: 0"
+  },
+  {
+    "data": "2023-12-06 09:56:36",
+    "message": "Interface do cliente Aberta ID: 0"
+  },
+  {
+    "data": "2023-12-06 09:56:47",
+    "message": "Acessado Menu principal 1"
+  },
+  {
+    "data": "2023-12-06 09:56:47",
+    "message": "Acessado Menu Oredem de servico"
+  },
+  {
+    "data": "2023-12-06 09:57:10",
+    "message": "Acessado Menu Ordem de Servico: Opcao 1"
+  },
+  {
+    "data": "2023-12-06 09:57:17",
+    "message": "Acesso ao Menu Principal\n Seu ID \u00e9: 0"
+  },
+  {
+    "data": "2023-12-06 09:59:02",
+    "message": "Interface do cliente Aberta ID: 0"
+  },
+  {
+    "data": "2023-12-06 09:59:02",
+    "message": "Tipo de usuario: cliente Autenticado com ID: 1"
+  },
+  {
+    "data": "2023-12-06 09:59:19",
+    "message": "Acessado Menu principal 1"
+  },
+  {
+    "data": "2023-12-06 09:59:19",
+    "message": "Acessado Menu Oredem de servico"
+  },
+  {
+    "data": "2023-12-06 09:59:32",
+    "message": "Acessado Menu Ordem de Servico: Opcao 2"
+  },
+  {
+    "data": "2023-12-06 09:59:35",
+    "message": "Acesso ao Menu Principal\n Seu ID \u00e9: 1"
+  },
+  {
+    "data": "2023-12-06 09:59:40",
+    "message": "Acessado Menu principal 3"
+  },
+  {
+    "data": "2023-12-06 10:00:06",
+    "message": "Acessado Menu principal 4"
+  },
+  {
+    "data": "2023-12-06 10:02:51",
+    "message": "Interface do cliente Aberta ID: 0"
+  },
+  {
+    "data": "2023-12-06 10:02:51",
+    "message": "Tipo de usuario: funcionario Autenticado com ID: 3"
+  },
+  {
+    "data": "2023-12-06 10:05:21",
+    "message": "Interface do cliente Aberta ID: 0"
+  },
+  {
+    "data": "2023-12-06 10:05:21",
+    "message": "Tipo de usuario: funcionario Autenticado com ID: 3"
+  },
+  {
+    "data": "2023-12-06 10:06:36",
+    "message": "Interface do cliente Aberta ID: 3"
+  },
+  {
+    "data": "2023-12-06 10:06:36",
+    "message": "Tipo de usuario: funcionario Autenticado com ID: 3"
+  },
+  {
+    "data": "2023-12-06 10:06:55",
+    "message": "Acessado Menu principal 1"
+  },
+  {
+    "data": "2023-12-06 10:06:55",
+    "message": "Acessado Menu Oredem de servico"
+  },
+  {
+    "data": "2023-12-06 10:07:13",
+    "message": "Acessado Menu Ordem de Servico: Opcao 5"
+  },
+  {
+    "data": "20231206_1449",
+    "message": "Interface do cliente Aberta ID: 0"
+  },
+  {
+    "data": "20231206_1449",
+    "message": "Interface do cliente Aberta ID: 0"
+  },
+  {
+    "data": "20231206_1516",
+    "message": "Interface do cliente Aberta ID: 0"
+  },
+  {
+    "data": "20231206_1516",
+    "message": "Acessado Menu principal 1"
+  },
+  {
+    "data": "20231206_1516",
+    "message": "Acessado Menu Ordem de servico"
+  },
+  {
+    "data": "20231206_1516",
+    "message": "Acessado Menu Ordem de Servico: Opcao 2"
+  },
+  {
+    "data": "20231206_1617",
+    "message": "Interface do cliente Aberta ID: 0"
+  },
+  {
+    "data": "20231206_1617",
+    "message": "Acessado Menu principal 1"
+  },
+  {
+    "data": "20231206_1617",
+    "message": "Acessado Menu Ordem de servico"
+  },
+  {
+    "data": "20231206_1617",
+    "message": "Acessado Menu Ordem de Servico: Opcao 1"
+  },
+  {
+    "data": "20231206_1617",
+    "message": "Acessado Menu Ordem de Servico: Opcao 1"
+  },
+  {
+    "data": "20231206_1932",
+    "message": "Interface do cliente Aberta ID: 0"
+  },
+  {
+    "data": "20231206_1932",
+    "message": "Acessado Menu principal 1"
+  },
+  {
+    "data": "20231206_1932",
+    "message": "Acessado Menu Ordem de servico"
+  },
+  {
+    "data": "20231206_1932",
+    "message": "Acessado Menu Ordem de Servico: Opcao 1"
+  },
+  {
+    "data": "20231206_1934",
+    "message": "Interface do cliente Aberta ID: 0"
+  },
+  {
+    "data": "20231206_1934",
+    "message": "Acessado Menu principal 1"
+  },
+  {
+    "data": "20231206_1934",
+    "message": "Acessado Menu Ordem de servico"
+  },
+  {
+    "data": "20231206_1934",
+    "message": "Acessado Menu Ordem de Servico: Opcao 1"
+  },
+  {
+    "data": "20231206_1934",
+    "message": "Acessado Menu Ordem de Servico: Opcao 1"
+  },
+  {
+    "data": "20231206_1935",
+    "message": "Interface do cliente Aberta ID: 0"
+  },
+  {
+    "data": "20231206_1935",
+    "message": "Acessado Menu principal 1"
+  },
+  {
+    "data": "20231206_1935",
+    "message": "Acessado Menu Ordem de servico"
+  },
+  {
+    "data": "20231206_1935",
+    "message": "Acessado Menu Ordem de Servico: Opcao 1"
+  },
+  {
+    "data": "20231206_1937",
+    "message": "Interface do cliente Aberta ID: 0"
+  },
+  {
+    "data": "20231206_1937",
+    "message": "Acessado Menu principal 1"
+  },
+  {
+    "data": "20231206_1937",
+    "message": "Acessado Menu Ordem de servico"
+  },
+  {
+    "data": "20231206_1937",
+    "message": "Acessado Menu Ordem de Servico: Opcao 1"
+  },
+  {
+    "data": "20231206_1937",
+    "message": "Acessado Menu Ordem de Servico: Opcao 1"
+  },
+  {
+    "data": "20231206_1937",
+    "message": "Acessado Menu Ordem de Servico: Opcao 1"
+  },
+  {
+    "data": "20231206_1937",
+    "message": "Acessado Menu Ordem de Servico: Opcao 1"
+  },
+  {
+    "data": "20231206_1937",
+    "message": "Acessado Menu Ordem de Servico: Opcao 1"
+  },
+  {
+    "data": "20231206_1937",
+    "message": "Acessado Menu Ordem de Servico: Opcao 1"
+  },
+  {
+    "data": "20231206_1937",
+    "message": "Acessado Menu Ordem de Servico: Opcao 1"
+  },
+  {
+    "data": "20231206_1937",
+    "message": "Acessado Menu Ordem de Servico: Opcao 1"
+  },
+  {
+    "data": "20231206_1937",
+    "message": "Acessado Menu Ordem de Servico: Opcao 1"
+  },
+  {
+    "data": "20231206_1937",
+    "message": "Acessado Menu Ordem de Servico: Opcao 1"
+  },
+  {
+    "data": "20231206_1937",
+    "message": "Acessado Menu Ordem de Servico: Opcao 1"
+  },
+  {
+    "data": "20231206_1938",
+    "message": "Interface do cliente Aberta ID: 0"
+  },
+  {
+    "data": "20231206_1938",
+    "message": "Acessado Menu principal 1"
+  },
+  {
+    "data": "20231206_1938",
+    "message": "Acessado Menu Ordem de servico"
+  },
+  {
+    "data": "20231206_1938",
+    "message": "Acessado Menu Ordem de Servico: Opcao 1"
+  },
+  {
+    "data": "20231206_1938",
+    "message": "Acesso ao Menu Principal\n Seu ID \u00e9: 0"
+  },
+  {
+    "data": "20231206_2016",
+    "message": "Interface do cliente Aberta ID: 0"
+  },
+  {
+    "data": "20231206_2016",
+    "message": "Acessado Menu principal 1"
+  },
+  {
+    "data": "20231206_2016",
+    "message": "Acessado Menu Ordem de servico"
+  },
+  {
+    "data": "20231206_2016",
+    "message": "Acessado Menu Ordem de Servico: Opcao 1"
+  },
+  {
+    "data": "20231206_2018",
+    "message": "Interface do cliente Aberta ID: 0"
+  },
+  {
+    "data": "20231206_2018",
+    "message": "Acessado Menu principal 1"
+  },
+  {
+    "data": "20231206_2018",
+    "message": "Acessado Menu Ordem de servico"
+  },
+  {
+    "data": "20231206_2018",
+    "message": "Acessado Menu Ordem de Servico: Opcao 1"
+  },
+  {
+    "data": "20231206_2018",
+    "message": "Acessado Menu Ordem de Servico: Opcao 1"
+  },
+  {
+    "data": "20231206_2018",
+    "message": "Acessado Menu Ordem de Servico: Opcao 1"
+  },
+  {
+    "data": "20231206_2018",
+    "message": "Acessado Menu Ordem de Servico: Opcao 1"
+  },
+  {
+    "data": "20231206_2018",
+    "message": "Acessado Menu Ordem de Servico: Opcao 1"
+  },
+  {
+    "data": "20231206_2026",
+    "message": "Interface do cliente Aberta ID: 0"
+  },
+  {
+    "data": "20231206_2026",
+    "message": "Acessado Menu principal 1"
+  },
+  {
+    "data": "20231206_2026",
+    "message": "Acessado Menu Ordem de servico"
+  },
+  {
+    "data": "20231206_2026",
+    "message": "Acessado Menu Ordem de Servico: Opcao 1"
+  },
+  {
+    "data": "20231206_2026",
+    "message": "Acessado Menu Ordem de Servico: Opcao 1"
+  },
+  {
+    "data": "20231206_2026",
+    "message": "Acessado Menu Ordem de Servico: Opcao 1"
+  },
+  {
+    "data": "20231206_2040",
+    "message": "Interface do cliente Aberta ID: 0"
+  },
+  {
+    "data": "20231206_2040",
+    "message": "Acessado Menu principal 1"
+  },
+  {
+    "data": "20231206_2040",
+    "message": "Acessado Menu Ordem de servico"
+  },
+  {
+    "data": "20231206_2040",
+    "message": "Acessado Menu Ordem de Servico: Opcao 1"
+  },
+  {
+    "data": "20231206_2041",
+    "message": "Interface do cliente Aberta ID: 0"
+  },
+  {
+    "data": "20231206_2041",
+    "message": "Acessado Menu principal 1"
+  },
+  {
+    "data": "20231206_2041",
+    "message": "Acessado Menu Ordem de servico"
+  },
+  {
+    "data": "20231206_2041",
+    "message": "Acessado Menu Ordem de Servico: Opcao 1"
+  },
+  {
+    "data": "20231206_2047",
+    "message": "Interface do cliente Aberta ID: 0"
+  },
+  {
+    "data": "20231206_2047",
+    "message": "Acessado Menu principal 1"
+  },
+  {
+    "data": "20231206_2047",
+    "message": "Acessado Menu Ordem de servico"
+  },
+  {
+    "data": "20231206_2047",
+    "message": "Acessado Menu Ordem de Servico: Opcao 1"
+  },
+  {
+    "data": "20231206_2059",
+    "message": "Interface do cliente Aberta ID: 0"
+  },
+  {
+    "data": "20231206_2059",
+    "message": "Acessado Menu principal 1"
+  },
+  {
+    "data": "20231206_2059",
+    "message": "Acessado Menu Ordem de servico"
+  },
+  {
+    "data": "20231206_2059",
+    "message": "Acessado Menu Ordem de Servico: Opcao 1"
+  },
+  {
+    "data": "20231206_2103",
+    "message": "Interface do cliente Aberta ID: 0"
+  },
+  {
+    "data": "20231206_2103",
+    "message": "Acessado Menu principal 1"
+  },
+  {
+    "data": "20231206_2103",
+    "message": "Acessado Menu Ordem de servico"
+  },
+  {
+    "data": "20231206_2103",
+    "message": "Acessado Menu Ordem de Servico: Opcao 1"
+  },
+  {
+    "data": "20231206_2103",
+    "message": "Acessado Menu Ordem de Servico: Opcao 1"
+  },
+  {
+    "data": "20231206_2104",
+    "message": "Interface do cliente Aberta ID: 0"
+  },
+  {
+    "data": "20231206_2104",
+    "message": "Acessado Menu principal 1"
+  },
+  {
+    "data": "20231206_2104",
+    "message": "Acessado Menu Ordem de servico"
+  },
+  {
+    "data": "20231206_2104",
+    "message": "Acessado Menu Ordem de Servico: Opcao 1"
+  },
+  {
+    "data": "20231206_2111",
+    "message": "Interface do cliente Aberta ID: 0"
+  },
+  {
+    "data": "20231206_2111",
+    "message": "Acessado Menu principal 1"
+  },
+  {
+    "data": "20231206_2111",
+    "message": "Acessado Menu Ordem de servico"
+  },
+  {
+    "data": "20231206_2111",
+    "message": "Acessado Menu Ordem de Servico: Opcao 1"
+  },
+  {
+    "data": "20231206_2111",
+    "message": "Acesso ao Menu Principal\n Seu ID \u00e9: 0"
+  },
+  {
+    "data": "20231206_2115",
+    "message": "Interface do cliente Aberta ID: 0"
+  },
+  {
+    "data": "20231206_2115",
+    "message": "Acessado Menu principal 1"
+  },
+  {
+    "data": "20231206_2115",
+    "message": "Acessado Menu Ordem de servico"
+  },
+  {
+    "data": "20231206_2115",
+    "message": "Acessado Menu Ordem de Servico: Opcao 1"
+  },
+  {
+    "data": "20231206_2136",
+    "message": "Interface do cliente Aberta ID: 0"
+  },
+  {
+    "data": "20231206_2136",
+    "message": "Acessado Menu principal 1"
+  },
+  {
+    "data": "20231206_2136",
+    "message": "Acessado Menu Ordem de servico"
+  },
+  {
+    "data": "20231206_2136",
+    "message": "Acessado Menu Ordem de Servico: Opcao 1"
+  },
+  {
+    "data": "20231206_2145",
+    "message": "Interface do cliente Aberta ID: 0"
+  },
+  {
+    "data": "20231206_2145",
+    "message": "Acessado Menu principal 1"
+  },
+  {
+    "data": "20231206_2145",
+    "message": "Acessado Menu Ordem de servico"
+  },
+  {
+    "data": "20231206_2145",
+    "message": "Acessado Menu Ordem de Servico: Opcao 1"
+  },
+  {
+    "data": "20231206_2147",
+    "message": "Interface do cliente Aberta ID: 0"
+  },
+  {
+    "data": "20231206_2147",
+    "message": "Acessado Menu principal 1"
+  },
+  {
+    "data": "20231206_2147",
+    "message": "Acessado Menu Ordem de servico"
+  },
+  {
+    "data": "20231206_2147",
+    "message": "Acessado Menu Ordem de Servico: Opcao 1"
+  },
+  {
+    "data": "20231206_2150",
+    "message": "Interface do cliente Aberta ID: 0"
+  },
+  {
+    "data": "20231206_2150",
+    "message": "Acessado Menu principal 1"
+  },
+  {
+    "data": "20231206_2150",
+    "message": "Acessado Menu Ordem de servico"
+  },
+  {
+    "data": "20231206_2150",
+    "message": "Acessado Menu Ordem de Servico: Opcao 1"
+  },
+  {
+    "data": "20231206_2152",
+    "message": "Interface do cliente Aberta ID: 0"
+  },
+  {
+    "data": "20231206_2152",
+    "message": "Acessado Menu principal 1"
+  },
+  {
+    "data": "20231206_2152",
+    "message": "Acessado Menu Ordem de servico"
+  },
+  {
+    "data": "20231206_2152",
+    "message": "Acessado Menu Ordem de Servico: Opcao 1"
+  },
+  {
+    "data": "20231206_2256",
+    "message": "Interface do cliente Aberta ID: 0"
+  },
+  {
+    "data": "20231206_2256",
+    "message": "Acessado Menu principal 1"
+  },
+  {
+    "data": "20231206_2256",
+    "message": "Acessado Menu Ordem de servico"
+  },
+  {
+    "data": "20231206_2256",
+    "message": "Acessado Menu Ordem de Servico: Opcao 1"
+  },
+  {
+    "data": "20231206_2300",
+    "message": "Interface do cliente Aberta ID: 0"
+  },
+  {
+    "data": "20231206_2300",
+    "message": "Acessado Menu principal 1"
+  },
+  {
+    "data": "20231206_2300",
+    "message": "Acessado Menu Ordem de servico"
+  },
+  {
+    "data": "20231206_2300",
+    "message": "Acessado Menu Ordem de Servico: Opcao 1"
+  },
+  {
+    "data": "20231206_2315",
+    "message": "Interface do cliente Aberta ID: 0"
+  },
+  {
+    "data": "20231206_2315",
+    "message": "Acessado Menu principal 1"
+  },
+  {
+    "data": "20231206_2315",
+    "message": "Acessado Menu Ordem de servico"
+  },
+  {
+    "data": "20231206_2315",
+    "message": "Acessado Menu Ordem de Servico: Opcao 1"
+  },
+  {
+    "data": "20231206_2331",
+    "message": "Interface do cliente Aberta ID: 0"
+  },
+  {
+    "data": "20231206_2331",
+    "message": "Acessado Menu principal 1"
+  },
+  {
+    "data": "20231206_2331",
+    "message": "Acessado Menu Ordem de servico"
+  },
+  {
+    "data": "20231206_2331",
+    "message": "Acessado Menu Ordem de Servico: Opcao 1"
+  },
+  {
+    "data": "20231206_2333",
+    "message": "Interface do cliente Aberta ID: 0"
+  },
+  {
+    "data": "20231206_2333",
+    "message": "Acessado Menu principal 1"
+  },
+  {
+    "data": "20231206_2333",
+    "message": "Acessado Menu Ordem de servico"
+  },
+  {
+    "data": "20231206_2333",
+    "message": "Acessado Menu Ordem de Servico: Opcao 1"
+  },
+  {
+    "data": "20231206_2336",
+    "message": "Interface do cliente Aberta ID: 0"
+  },
+  {
+    "data": "20231206_2336",
+    "message": "Acessado Menu principal 1"
+  },
+  {
+    "data": "20231206_2336",
+    "message": "Acessado Menu Ordem de servico"
+  },
+  {
+    "data": "20231206_2336",
+    "message": "Acessado Menu Ordem de Servico: Opcao 1"
+  },
+  {
+    "data": "20231206_2338",
+    "message": "Interface do cliente Aberta ID: 0"
+  },
+  {
+    "data": "20231206_2338",
+    "message": "Acessado Menu principal 1"
+  },
+  {
+    "data": "20231206_2338",
+    "message": "Acessado Menu Ordem de servico"
+  },
+  {
+    "data": "20231206_2338",
+    "message": "Acessado Menu Ordem de Servico: Opcao 1"
+  },
+  {
+    "data": "20231207_0943",
+    "message": "Interface do cliente Aberta ID: 1"
+  },
+  {
+    "data": "20231207_0943",
+    "message": "Tipo de usuario: cliente Autenticado com ID: 1"
+  },
+  {
+    "data": "20231207_0943",
+    "message": "Acessado Menu principal 1"
+  },
+  {
+    "data": "20231207_0943",
+    "message": "Acessado Menu Ordem de servico"
+  },
+  {
+    "data": "20231207_0943",
+    "message": "Acessado Menu Ordem de Servico: Opcao 1"
+  },
+  {
+    "data": "20231207_0943",
+    "message": "Acessado Menu Ordem de Servico: Opcao 2"
+  },
+  {
+    "data": "20231207_0945",
+    "message": "Interface do cliente Aberta ID: 1"
+  },
+  {
+    "data": "20231207_0945",
+    "message": "Tipo de usuario: cliente Autenticado com ID: 1"
+  },
+  {
+    "data": "20231207_0945",
+    "message": "Acessado Menu principal 1"
+  },
+  {
+    "data": "20231207_0945",
+    "message": "Acessado Menu Ordem de servico"
+  },
+  {
+    "data": "20231207_0945",
+    "message": "Acessado Menu Ordem de Servico: Opcao 1"
+  },
+  {
+    "data": "20231207_0951",
+    "message": "Interface do cliente Aberta ID: 1"
+  },
+  {
+    "data": "20231207_0951",
+    "message": "Tipo de usuario: cliente Autenticado com ID: 1"
+  },
+  {
+    "data": "20231207_0951",
+    "message": "Acessado Menu principal 1"
+  },
+  {
+    "data": "20231207_0951",
+    "message": "Acessado Menu Ordem de servico"
+  }
+]

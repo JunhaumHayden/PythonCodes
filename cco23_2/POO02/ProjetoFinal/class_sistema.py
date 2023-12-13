@@ -1,4 +1,12 @@
 import datetime
+from datetime import datetime
+import random
+import uuid
+import tkinter as tk
+from tkinter import ttk
+import pandas as pd
+
+
 
 class Veiculo:
     """Classe para instanciar veiculos"""
@@ -7,12 +15,15 @@ class Veiculo:
         self.modelo = modelo
         self.marca = marca
         self.categoria = categoria
+        
+    def to_dict(self):
+        return {'Placa': self.placa, 'Modelo': self.modelo, 'Marca': self.marca, 'Categoria': self.categoria}
 
     def __str__(self):
-        print(f"Placa: {self.placa}")
-        print(f"Modelo: {self.modelo}")
-        print(f"Marca: {self.marca}")
-        print(f"Categoria: {self.categoria}")
+        return f"Placa: {self.placa}\nModelo: {self.modelo}\nMarca: {self.marca}\nCategoria: {self.categoria}"
+        
+
+    # Métodos getters e setters    
 
     def getplaca(self):
         return self.placa    
@@ -34,14 +45,20 @@ class Veiculo:
     def setcategoria(self,categoria):
         self.placa = categoria
     
+    
 
 class Cliente:
     """Classe para instanciar Clientes"""
-    def __init__(self, nome, tipo, info_contato):
+    def __init__(self,id, nome, tipo, info_contato):
+        self.id = id
         self.nome = nome
         self.tipo = tipo  # Pessoa Física ou Jurídica
         self.info_contato = info_contato
         self.veiculos = []  # Lista para armazenar os veículos associados ao cliente
+
+    # Métodos getters e setters
+    def get_cliente_id(self):
+        return self.id
 
     def getveiculo(self):
         return self.veiculos
@@ -64,10 +81,11 @@ class Cliente:
         self.info_contato = info_contato
 
 
+    def to_dict(self):
+        return {'Nome': self.nome, 'Tipo': self.tipo, 'Contato': self.info_contato}
+
     def __str__(self):
-        print(f"Nome: {self.nome}")
-        print(f"Tipo: {self.tipo}")
-        print(f"Contato: {self.info_contato}")
+        return f"ID: {self.id}\nNome: {self.nome}\nTipo: {self.tipo}\nContato: {self.info_contato}"
         
 
 class Servico:
@@ -87,15 +105,20 @@ class Servico:
         self.valor_padrao = valor_padrao
 
     def __str__(self):
-        print(f"Descrição: {self.descricao}")
-        print(f"Valor: {self.valor_padrao}")
+        #print(f"Descrição: {self.descricao}")
+        #print(f"Valor: {self.valor_padrao}")
+        return f"Descrição: {self.descricao}\n Valor: {self.valor_padrao}"
+    
+    def to_dict(self):
+        return {'Descrição': self.descricao, 'Valor': self.valor_padrao}
+
         
 
 class OrdemServico:
     """Classe para instanciar Ordens de Servicos"""
-    def __init__(self, numero, data, veiculo, cliente):
-        self.numero = numero
-        self.data = datetime.datetime.today()
+    def __init__(self, veiculo, cliente):
+        self.data_os = datetime.today()
+        self.numero = self.gerar_numero()
         self.veiculo = veiculo
         self.cliente = cliente
         self.estado = 'ABERTA'
@@ -130,6 +153,27 @@ class OrdemServico:
         else:
             self.taxa_desconto = desconto
 
+
+
+    def to_dict(self):
+        return {
+            'Número OS': self.numero,
+            'Estado': self.estado,
+            'Data': self.data_os,
+            'Cliente': self.cliente.to_dict(),
+            'Veículo': self.veiculo.to_dict(),
+            'Itens de Serviço': [item['servico'].to_dict() for item in self.itens_servico],
+            'Total da Ordem': self.total_ordem,
+            'Taxa de Desconto': self.taxa_desconto
+            }        
+
+    def gerar_numero(self):
+        data_formatada = self.data_os.strftime("%Y%m%d_%H%M")
+        numero_aleatorio = str(random.randint(10, 99))
+        identificador_unico = str(uuid.uuid4().hex)[:2]  # Dois primeiros dígitos do UUID
+        numero_gerado = f"{data_formatada}_{numero_aleatorio}{identificador_unico}"
+        return numero_gerado
+
     def adicionar_item_servico(self, servico, valor_personalizado, pontuacao_acumulada):
         if self.estado == 'FECHADA' or self.estado == 'CANCELADA':
             print(f'Ordem de serviço {self.estado}.')
@@ -146,21 +190,26 @@ class OrdemServico:
     def cancelar_ordem(self):
         self.estado = 'CANCELADA'
 
+    @staticmethod
+    def pesquisar_ordem_servico(numero_os, lista_ordens_servico):
+        for ordem in lista_ordens_servico:
+            if ordem.numero == numero_os:
+                return ordem
+        return None
+
     def __str__(self):
        
         print('*'*20)
         print(f"OS: {self.numero}")
         print(f"Estado: {self.estado}")
-        print(f"Data: {self.data}")
-        print('\n   Cliente: ')
-        self.cliente.__str__()
-        print('\n   Veiculo: ')
-        self.veiculo.__str__()
+        print(f"Data: {self.data_os}")
+        print(f'\n   Cliente: \n{self.cliente.__str__()}')
+        print(f'\n   Veiculo: \n{self.veiculo.__str__()}')
         print('-'*20)
         print('-'*20)
         
         print('\n   Descrição dos serviços: ')
-        print('-'*20)
+        print('-'*30)
         cont = 1
         for item in self.itens_servico:
             print(f'Item {cont}: ')
@@ -173,57 +222,90 @@ class OrdemServico:
         print(f"Valor: {self.total_ordem}")
         print(f"Descontos: {self.taxa_desconto}")
         print('*'*20)
+        print('\n')
+        return f"**Ordem de Serviço**\nNúmero OS: {self.numero}\nEstado: {self.estado}\nData: {self.data_os}\n" \
+               f"Cliente: {self.cliente}\nVeículo: {self.veiculo}\nTotal da Ordem: {self.total_ordem}\n" \
+               f"Taxa de Desconto: {self.taxa_desconto}"
+
+
+
+    
+   
+
 
 #main
 if __name__ == '__main__':
+   
     # Exemplo de uso
-    # Criando um veículo
-    meu_veiculo = Veiculo('ABC123', 'ModeloXYZ', 'MarcaCar', 'Pequeno')
+
+    servicos = []
+    clientes = []
+    veiculos = []
+    oss = []
+
+
+    servicos.append(Servico('Lavação completa', 50.0))
+    servicos.append(Servico('Lavação motor', 30.0))
+    servicos.append(Servico('Aspiração', 20.0))
 
     # Criando um cliente
-    cliente1 = Cliente('João da Silva', 'Pessoa Física', 'joao@example.com')
+    
+    clientes.append(Cliente('Bia', 'Pessoa Física', 'bia@example.com'))
+    clientes.append(Cliente('Ana', 'Pessoa Física', 'ana@example.com'))
 
-    # Criando um serviço
-    servico1 = Servico('Lavação completa', 50.0)
-    servico2 = Servico('Lavação motor', 30.0)
 
-    # Criando uma ordem de serviço
-    os1 = OrdemServico('OS001', '2023-09-17', meu_veiculo, cliente1)
-    os1.adicionar_item_servico(servico1, 50.0, 10)
-    os1.calcular_total_ordem()
-    print('****Total da ordem****:', os1.total_ordem)
+    # Criando um veículos
+    veiculos.append(Veiculo('BCD234', 'ModeloBIaz', 'MarcaBiaCar', 'Pequeno'))
 
-    # Fechar a ordem de serviço
-    os1.setstatus('FECHADA')
+    veiculos.append(Veiculo('ABC123', 'ModeloAnaX', 'MarcaAnaCar', 'Pequeno'))
+    veiculos.append(Veiculo('ABC234', 'Modelo123', 'OutraMarcaAnaCar', 'Médio'))
 
-    print('Estado da ordem:\n')
-    os1.__str__()
-
-    os1.adicionar_item_servico(servico2, 30.0, 10)
-    os1.calcular_total_ordem()
-    print('__Total da ordem__:', os1.total_ordem)
-    os1.__str__()
-
-    os1.setstatus('CANCELADA')
-
-    os1.setstatus('ABERTA')
-
-    # Criando um cliente com dois veiculos
-    cliente1 = Cliente('João da Silva', 'Pessoa Física', 'joao@example.com')
-
-    # Criando veículos
-    veiculo1 = Veiculo('ABC123', 'ModeloXYZ', 'MarcaCar', 'Pequeno')
-    veiculo2 = Veiculo('DEF456', 'Modelo123', 'OutraMarca', 'Médio')
+    
 
     # Associando veículos ao cliente
-    cliente1.adicionar_veiculo(veiculo1)
-    cliente1.adicionar_veiculo(veiculo2)
+    clientes[0].setveiculo(veiculos[0])
+    
+    clientes[1].setveiculo(veiculos[1])
+    clientes[1].setveiculo(veiculos[2])
+
+
+    # Criando ordens de serviço
+    oss.append(OrdemServico(veiculos[0], clientes[1]))
+    oss[0].adicionar_item_servico(servicos[1], 50.0, 10)
+    oss[0].calcular_total_ordem()
+    oss[0].fechar_ordem()
+
+    oss.append(OrdemServico(veiculos[2], clientes[0]))
+    oss[1].adicionar_item_servico(servicos[2], 30.0, 5)
+    oss[1].calcular_total_ordem()
+    oss[1].cancelar_ordem()
+
+    oss.append(OrdemServico(veiculos[1], clientes[1]))
+    oss[2].adicionar_item_servico(servicos[1], 50.0, 10)
+    oss[2].adicionar_item_servico(servicos[2], 30.0, 5)
+    oss[2].calcular_total_ordem()
 
     # Pesquisando veículos do cliente
     print("Veículos associados ao cliente:")
-    for veiculo in cliente1.pesquisar_veiculos():
+    for veiculo in clientes[1].getveiculo():
         print("Placa:", veiculo.placa)
         print("Modelo:", veiculo.modelo)
         print("Marca:", veiculo.marca)
         print("Categoria:", veiculo.categoria)
         print("---------------------")
+
+    for ordem in clientes[1].getveiculo():
+        print("Placa:", veiculo.placa)
+        print("Modelo:", veiculo.modelo)
+        print("Marca:", veiculo.marca)
+        print("Categoria:", veiculo.categoria)
+        print("---------------------")
+
+
+
+
+
+
+
+
+   
