@@ -43,3 +43,5 @@ app.acessar_ambiente()  # Saída: Bem-vindo ao ambiente do usuário.
 # Autenticar como funcionário
 app.autenticar_usuario('funcionario1', 'senha_func1')
 app.acessar_ambiente()  # Saída: Bem-vindo ao ambiente do funcionário.
+
+

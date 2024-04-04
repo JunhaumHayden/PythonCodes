@@ -4,7 +4,7 @@ HEIGHT = 1370 #1080
 WIDTH = 768 #1920
 BG_COLOR = (33, 124, 66) #Poker game green
 GAME_FONT = 'graphics/fonts/PixelatedDisplay.ttf'
-GAME_AUDIO_DIR = 'audio/'
+GAME_AUDIO_DIR = "audioo/"
 
 P1_C1 = (20, (HEIGHT / 3))
 P1_C2 = (80, (HEIGHT / 3))

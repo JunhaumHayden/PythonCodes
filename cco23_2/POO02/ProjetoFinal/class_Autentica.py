@@ -89,6 +89,12 @@ class Sistema:
 
 if __name__ == '__main__':
     pass
+
+    #Instanciando class Sistema com uma lista vazia
+    sistema = Sistema()
+
+
+    sistema.set
     # Autenticar e acessar ambiente do usuário
     inicializarAutent()
     inicializarSitema()
