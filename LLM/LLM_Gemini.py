@@ -28,15 +28,15 @@ safety_settings={
     'SEXUAL' : 'BLOCK_NONE',
     'DANGEROUS' : 'BLOCK_NONE'
     }
-genai.configure(api_key='AIzaSyAOF_fioAmQLzEYKnaIsacResDbxEr4E0A') #usar API Keys
+genai.configure(api_key='your_key') #usar API Keys
 #Configurando o modelo
 model = genai.GenerativeModel(model_name='gemini-1.0-pro',
                                   generation_config=generation_config,
                                   safety_settings=safety_settings,)
 
+#Codigo de teste
 #response = model.generate_content("Que empresa criou o modelo de IA Gemini?")
 #print(response.text)
-
 # #Listando os modelos disponíveis
 # for m in genai.list_models():
 #   if 'generateContent' in m.supported_generation_methods:
@@ -57,14 +57,11 @@ def chatBoot():
     while prompt != "fim":
         response = chat.send_message(prompt)
         #display(to_markdown("*Resposta*: "), to_markdown(response.text))
-        print("Resposta: ", response.text)
-        #print("Resposta:", response.text, '\n\n')
+        print("Resposta:", response.text, '\n\n')
         prompt = input('Proxima pergunta: ')
     display("Volte sempre que precisar!!!")
 
 if __name__ == '__main__':
-  display(to_markdown('**meu texto**'))
-  
-  #chatBoot()
+  chatBoot()
 
 

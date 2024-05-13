@@ -10,7 +10,7 @@ from google.colab import userdata # Usado para guardar a API key em segurança
 
 #Configurações iniciais
 
-GOOGLE_API_KEY=userdata.get('secretName')#Acessar a API keys
+GOOGLE_API_KEY=userdata.get('your_key')#Acessar a API keys
 genai.configure(api_key=GOOGLE_API_KEY) #usar API Keys
 
 generation_config = {
