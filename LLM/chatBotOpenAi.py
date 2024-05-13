@@ -1,7 +1,7 @@
 import openai
 
 # Defina sua chave da API do OpenAI
-api_key = "sk-proj-rukuSCiAFuNxhZBaHQ6JT3BlbkFJmOXXnKE2MbUhEUCtz0pu"
+api_key = "your_key"
 openai.api_key = api_key
 
 # engines = openai.Engine.list()

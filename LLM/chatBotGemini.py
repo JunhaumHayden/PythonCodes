@@ -19,7 +19,7 @@ safety_settings = {
 
 # Configurando o modelo
 #genai.configure(api_key=GOOGLE_API_KEY)
-genai.configure(api_key='AIzaSyAOF_fioAmQLzEYKnaIsacResDbxEr4E0A')
+genai.configure(api_key='your_key')
 model = genai.GenerativeModel(model_name='gemini-1.0-pro',
                               generation_config=generation_config,
                               safety_settings=safety_settings,)
