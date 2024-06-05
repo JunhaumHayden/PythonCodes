@@ -51,6 +51,31 @@ Pomodoro Gemini is simple and efficient. Just start the program, and it will beg
 3. Run the program with `python pomodoro_gemini.py`
 4. Start studying and let Pomodoro Gemini take care of the rest!
 5. NOTE: The program checks at the end of each cycle if the user wants to restart
+   
+>  **&#8505;**
+> ***Requirements files*** are files containing a list of items to be installed using `pip install` like so:
+> 
+> **Unix/macOS**
+> ```Python
+>    python -m pip install -r requirements.txt
+>    ```
+> **Windows**
+> ```Python
+>    py -m pip install -r requirements.txt
+>    ```
+> Requirements files are used to hold the result from `pip freeze` for the purpose of achieving Repeatable Installs. In this case, your requirement file contains a pinned version of everything that was installed when pip freeze was run.
+> 
+>  **Unix/macOS**
+> ```Python
+>    python -m pip freeze > requirements.txt
+>    python -m pip install -r requirements.txt
+>    ```
+> **Windows**
+> ```Python
+>    py -m pip freeze > requirements.txt
+>    py -m pip install -r requirements.txt
+>    ```
+
 
 Have fun studying with Pomodoro Gemini and boost your productivity! 🚀🍅
 
@@ -96,6 +121,30 @@ O Pomodoro Gêmini é simples e eficiente. Basta iniciar o programa e ele começ
 4. Comece a estudar e deixe o Pomodoro Gêmini cuidar do resto!
 5. OBS: O programa verifica ao final de cada ciclo se o usuário deseja reiniciar
 
+>  **&#8505;**
+> ***Arquivos de requisitos*** são arquivos que contêm uma lista de itens > a serem instalados usando `pip install` da seguinte forma:
+> 
+> **Unix/macOS**
+> ```Python
+>    python -m pip install -r requirements.txt
+>    ```
+> **Windows**
+> ```Python
+>    py -m pip install -r requirements.txt
+>    ```
+> Os arquivos de requisitos são usados ​​para armazenar o resultado do `pip freeze` com o propósito de obter instalações repetíveis. Nesse caso, seu arquivo de requisitos contém uma versão fixada de tudo o que foi instalado quando o pip freeze foi executado.
+> 
+>  **Unix/macOS**
+> ```Python
+>    python -m pip freeze > requirements.txt
+>    python -m pip install -r requirements.txt
+>    ```
+> **Windows**
+> ```Python
+>    py -m pip freeze > requirements.txt
+>    py -m pip install -r requirements.txt
+>    
+
 Divirta-se estudando com o Pomodoro Gêmini e aumente sua produtividade! 🚀🍅
 
 ## Por que escolher o Pomodoro Gemini?
@@ -108,6 +157,37 @@ Divirta-se estudando com o Pomodoro Gêmini e aumente sua produtividade! 🚀�
 **Pomodoro Gemini: Estude com Foco, Eficiência e Diversão!**
 
 
+Requirements Files
+“Requirements files” are files containing a list of items to be installed using pip install like so:
+
+
+Unix/macOS
+python -m pip install -r requirements.txt
+
+
+Windows
+py -m pip install -r requirements.txt
+
+
+Details on the format of the files are here: Requirements File Format.
+
+Logically, a Requirements file is just a list of pip install arguments placed in a file. Note that you should not rely on the items in the file being installed by pip in any particular order.
+
+Requirements files can also be served via a URL, e.g. http://example.com/requirements.txt besides as local files, so that they can be stored and served in a centralized place.
+
+In practice, there are 4 common uses of Requirements files:
+
+Requirements files are used to hold the result from pip freeze for the purpose of achieving Repeatable Installs. In this case, your requirement file contains a pinned version of everything that was installed when pip freeze was run.
+
+Unix/macOS
+python -m pip freeze > requirements.txt
+python -m pip install -r requirements.txt
+
+
+Windows
+
+py -m pip freeze > requirements.txt
+py -m pip install -r requirements.txt
 
 
 

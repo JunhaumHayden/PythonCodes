@@ -17,26 +17,27 @@ from IPython.display import Markdown
 
 
 #Configurações iniciais
-generation_config = {
-  "candidate_count": 1,
-  "temperature": 0.5,
-}
+generation_config = GENERATION_CONFIG #{
+#   "candidate_count": 1,
+#   "temperature": 0.5,
+# }
 #The safety_settings argument lets you configure what the model blocks and allows in both prompts and responses.
-safety_settings={
-    'HATE': 'BLOCK_NONE',
-    'HARASSMENT': 'BLOCK_NONE',
-    'SEXUAL' : 'BLOCK_NONE',
-    'DANGEROUS' : 'BLOCK_NONE'
-    }
-genai.configure(api_key='your_key') #usar API Keys
+safety_settings=SAFETY_SETTING #{
+    # 'HATE': 'BLOCK_NONE',
+    # 'HARASSMENT': 'BLOCK_NONE',
+    # 'SEXUAL' : 'BLOCK_NONE',
+    # 'DANGEROUS' : 'BLOCK_NONE'
+    # }
+
+genai.configure(api_key=GOOGLE_API_KEY) #usar API Keys
 #Configurando o modelo
 model = genai.GenerativeModel(model_name='gemini-1.0-pro',
                                   generation_config=generation_config,
                                   safety_settings=safety_settings,)
 
 #Codigo de teste
-#response = model.generate_content("Que empresa criou o modelo de IA Gemini?")
-#print(response.text)
+# response = model.generate_content("Que empresa criou o modelo de IA Gemini?")
+# print(response.text)
 # #Listando os modelos disponíveis
 # for m in genai.list_models():
 #   if 'generateContent' in m.supported_generation_methods:

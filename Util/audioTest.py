@@ -6,7 +6,7 @@
 from gtts import gTTS
 from playsound import playsound
 
-audio = '/Users/hayden/workspace/pythonCode/SimpleTest/audio.mp3'
+audio = '/Users/hayden/workspace/pythonCode/Util/audio.mp3'
 language = 'pt-br'
 
 sp = gTTS(text= 'Fala galera, esse é o meu primeiro audio gerado com IA', lang = language)

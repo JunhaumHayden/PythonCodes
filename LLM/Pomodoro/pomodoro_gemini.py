@@ -6,25 +6,28 @@ import textwrap
 from IPython.display import display
 from IPython.display import Markdown
 import google.generativeai as genai
-from google.colab import userdata # Usado para guardar a API key em segurança
+#from google.colab import userdata # Para Colab - Usado para guardar a API key em segurança
+from geminiSetting import * # Usado para guardar a API key em segurança
+
+#Configurações iniciais - Google Colab
+# GOOGLE_API_KEY=userdata.get('secretName')#Acessar a API keys
+# genai.configure(api_key=GOOGLE_API_KEY) #usar API Keys
+# generation_config = {
+#   "candidate_count": 1,
+#   "temperature": 0.5,
+# }
+# #The safety_settings argument lets you configure what the model blocks and allows in both prompts and responses.
+# safety_settings={
+#     'HATE': 'BLOCK_NONE',
+#     'HARASSMENT': 'BLOCK_NONE',
+#     'SEXUAL' : 'BLOCK_NONE',
+#     'DANGEROUS' : 'BLOCK_NONE'
+#     }
+#GOOGLE_API_KEY=userdata.get('your_key')#Acessar a API keys
+
 
 #Configurações iniciais
-
-GOOGLE_API_KEY=userdata.get('your_key')#Acessar a API keys
 genai.configure(api_key=GOOGLE_API_KEY) #usar API Keys
-
-generation_config = {
-  "candidate_count": 1,
-  "temperature": 0.5,
-}
-
-#The safety_settings argument lets you configure what the model blocks and allows in both prompts and responses.
-safety_settings={
-    'HATE': 'BLOCK_NONE',
-    'HARASSMENT': 'BLOCK_NONE',
-    'SEXUAL' : 'BLOCK_NONE',
-    'DANGEROUS' : 'BLOCK_NONE'
-    }
 
 # Set parametros de tempo// apague o valor e descomente para os tempos reais
 timePomodoro = 30 #25 * 60  # 25 minutes in seconds
@@ -43,8 +46,8 @@ pomodoro_counter = 0
 
 #Configurando o modelo
 model = genai.GenerativeModel(model_name='gemini-1.0-pro',
-                                  generation_config=generation_config,
-                                  safety_settings=safety_settings,)
+                                  generation_config=GENERATION_CONFIG,
+                                  safety_settings=SAFETY_SETTING,)
 
 #Funcao auxiliar para exibicao amigavel
 def to_markdown(text):
