@@ -310,6 +310,8 @@ node_modules/
 # Ignore arquivos .env
 .env
 
+*.zip
+
 
 # Visual Studio LightSwitch build output
 **/*.HTMLClient/GeneratedArtifacts
