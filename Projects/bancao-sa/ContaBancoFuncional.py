@@ -2,6 +2,7 @@ import textwrap
 
 
 def apresenta_menu():
+    """Funcao para apresentar para o usuario as opcoes do menu interativo"""
     menu = """\n
     ================ MENU ================
     [d]\tDepositar
@@ -52,19 +53,14 @@ def sacar(*, saldo, valor, extrato, limite, numero_saques, limite_saques):
     
 
 def imprimir_extrato(saldo, /, *, extrato):
+    """Funcao para imprimir extratos"""
     print("\n================ EXTRATO ================")
     print("Não foram realizadas movimentações." if not extrato else extrato)
     print(f"\nSaldo: R$ {saldo:.2f}")
     print("==========================================")
 
-def exibir_extrato(saldo, /, *, extrato):
-    print("\n================ EXTRATO ================")
-    print("Não foram realizadas movimentações." if not extrato else extrato)
-    print(f"\nSaldo:\t\tR$ {saldo:.2f}")
-    print("==========================================")
-
-
 def criar_usuario(usuarios):
+    """Funcao para criar novos usuarios"""
     cpf = input("Informe o CPF (somente número): ")
     usuario = filtrar_usuario(cpf, usuarios)
 
@@ -82,11 +78,13 @@ def criar_usuario(usuarios):
 
 
 def filtrar_usuario(cpf, usuarios):
+    """Funcao auxiliar para buscar por usuarios cadastrados"""
     usuarios_filtrados = [usuario for usuario in usuarios if usuario["cpf"] == cpf]
     return usuarios_filtrados[0] if usuarios_filtrados else None
 
 
 def criar_conta(agencia, numero_conta, usuarios):
+    """Funcao para associar uma conta a um usuario existente"""
     cpf = input("Informe o CPF do usuário: ")
     usuario = filtrar_usuario(cpf, usuarios)
 
@@ -98,6 +96,7 @@ def criar_conta(agencia, numero_conta, usuarios):
 
 
 def listar_contas(contas):
+    """Funcao para consultar contas existentes"""
     for conta in contas:
         linha = f"""\
             Agência:\t{conta['agencia']}
@@ -108,7 +107,7 @@ def listar_contas(contas):
         print(textwrap.dedent(linha))
 
 def main():
-        
+        """Funcao com o fluxo principal do programa"""
         LIMITE_SAQUES = 3
         AGENCIA = "0001"
 
@@ -126,7 +125,6 @@ def main():
                     saldo, extrato, msg = depositar(saldo, valor, extrato)
                     print(msg)
                     continue
-                    
                 case "s":
                     valor = float(input("Informe o valor do saque: "))
                     saldo, extrato, msg = sacar(
