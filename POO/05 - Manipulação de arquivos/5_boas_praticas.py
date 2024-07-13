@@ -2,8 +2,9 @@ from pathlib import Path
 
 ROOT_PATH = Path(__file__).parent
 
+# tecnica para garantir que o arquivo seja sempre fechado e lance uma excessao em caso do arquivo nao existir
 try:
-    with open(ROOT_PATH / "1lorem.txt", "r") as arquivo:
+    with open(ROOT_PATH / "1lorem.txt", "r") as arquivo: # tecnica para sempre fechar o arquivo
         print(arquivo.read())
 except IOError as exc:
     print(f"Erro ao abrir o arquivo {exc}")

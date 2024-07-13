@@ -22,6 +22,7 @@ arquivo = open(
     "/home/guilherme/Projetos/dio/codigo-fonte/trilha-python-dio/05 - Manipulação de arquivos/lorem.txt", "r"
 )
 # tip
+# Atribui cada linha a variavel linha, caso o tamanho da linha seja 0 (sem linha) a instrucao while finaliza
 while len(linha := arquivo.readline()):
     print(linha)
 

@@ -23,4 +23,9 @@ frutas = [
     "melancia",
 ]
 
-carros = ["ferrari", "brasilia", "gol", "up"]
+carros = [
+    "ferrari",
+    "brasilia",
+    "gol",
+    "up",
+]
