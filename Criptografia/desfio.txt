@@ -1,0 +1,137 @@
+poirot@34a2bc: $ cat proposta
+Vocˆ e foi designado para uma miss˜ ao sigilosa dentro da equipe
+de seguranc¸a cibern´ etica de uma grande organizac¸˜ ao. Dois
+indiv´ ıduos conhecidos pelos codinomes "Rato" e "Cobra" est˜
+ao
+sendo investigados por operac¸˜ oes criminosas online. Sua
+tarefa ´ e rastrear suas atividades digitais, reunir o m´ aximo
+de informac¸˜
+oes poss
+´ ıvel sobre suas operac¸˜ oes, e coletar
+evidˆ encias sem que eles percebam que est˜ ao sendo
+monitorados.
+poirot@34a2bc: $ cat coletaveis
+Como prova de eficiˆ encia em sua operac¸˜ ao, requisitamos que
+sejam coletados o maior n´
+umero poss
+´ ıvel dos itens a seguir,
+al´ em do envio de um relat´ orio sucinto descrevendo os passos
+realizados para a coleta
+1. a dica escondida dentro PDF
+2. o certificado em formato PEM
+3. a chave p´ ublica em formato PEM
+4. o login do usuario
+5. a url da conexao
+6. a senha do usu´ ario
+7. o nome verdadeiro do Rato
+8. o nome verdadeiro do Cobra
+poirot@34a2bc: $ cat correcao
+Nossa correc¸˜ ao do pr´ e-desafio ser´ a autom´ atica. Para
+assegurar seu desempenho no pr´ e-desafio envie todos os
+colet´ aveis encontrados em um .zip onde cada resposta seja
+{NUMERO QUESTAO}.txt
+Exemplo de entrega:
+respostas.zip
+1.txt
+2.txt
+3.txt
+4.txt
+5.txt
+6.txt
+7.txt
+8.txt
+poirot@34a2bc: $ cat ponto de partida
+Conseguimos interceptar algumas mensagens de algumas
+conversas entre Rato e Cobra, elas estar˜ ao sendo enviadas
+ap
+´ os o fim deste documento. Boa sorte em sua miss˜
+ao
+poirot@34a2bc: $ cat util
+In neon shadows where secrets decay,
+The encrypted message waits in disarray.
+Buried in protocols, locked without grace,
+A hidden cipher in a cold, grim space.
+Seek the signature, stark and thin,
+A digital ghost where truth wears thin.
+Verify, Investigate, Manipulate.
+1.Link
+´
+Uteis
+1.1.Documentac¸˜
+ao
+• https://medium.com/@jberkenbilt/the-structure-of-a-pdf
+-file-6f08114a58f6
+• https://en.wikipedia.org/wiki/ASN.1
+• https://datatracker.ietf.org/doc/html/rfc5652
+• https://www.jensign.com/sigview/index.html
+1.2.Ferramentas
+• https://lapo.it/asn1js/
+• https://manpages.ubuntu.com/manpages/kinetic/man1/dumpas
+n1.1.html
+INICIO DE UM NOVO CHAT
+Cobra:
+I2ABzGBbn6NhdbIBuJwdeggIS8fG4SdNyYaD9iGEyU6bZQP3Kd616Wk6NR+uYzxmsYLa7W
+dftplavxoDpL70Ck50IuP2/JP8Hx+3W+zXYc92NN624UQLSdiQNCk7uNLwPtW0s0oux4wD
+CMUWemV8vKfVzDnJ0H1xUokUr0y5Y5vTxcfWDVPz2gv2/A15Aylk5wG0jMheEKRQD7wDbK
+88KQBzGlJP+oDRYHse1CurA6moQ6AYx0A/+2oeZ/FSpDknkUS7K4nTp7OjZnHDN6If4mRe
+aAL3hH3rbvfGXsxbMEopmV8c4mz9VlifOHw7xA7Cy4wwAGS0B9neDu2syWaZnLRLCJhpjE
+s1kd+H2RRv39ZL9XL5vAXV9sKeqWdA2bkC4wDDsRSuvQNznI1ut/sXb2bSBI4RxaFdrsuI
+sh4x83oXwEZWHMuR+BgfpDmt7TttmiS/0ObPztA95mFG/JUxmgOWayS5XXD6yKb7dpcG8Y
+cRv8orl5VDHAnfrpFlwNfu9HlXVARHCV47Je8CE/dsySxAR2sGeZMNq6UqQNgJtMCbx7m0
+dCPSxcKYQRILJn0+bQST5xKS2OgKUGvT+Xgjnd6hTGtD1xQHeMfpNU7Ba/4rLf/iUVanN2
+6NZqrB/Jl//oq7/H/seJxXIO1Id2iCXBW9xX9fszF8JrGerM+AvDo=
+Rato:
+ARttSLW8+9szA8JnvglnbUosndq7C5AZqXpQ8V1uCx7jhVNbwwJ8gJE3Ub0ngrDwIRJQld
+d5RdGAkflDTh1LpugYK+bRwiwk4R1KwoSkJVHs/7dB2LfDh+4dIkXdp+A6RJvxYcDFYlG1
+JSQ77ld7YZZKYzFgOMHslPuKSrbyCQrf3BSsA36HmefCbLLSL+8XWX6YuXZpRRCbEawNU2
+Nju/E8bQg2E2tdXlzFJ7t3lEry1J3NbWjMDdJQV8ITeiA70+noLJTciJPfrOGyGhGHlkwj
+LYjRp1XVZaHt+KvZHCfvmBBuRpUMqpUEr9CEnsGD+mBMp+fqJOncSvjn6OC+R+ayLnMnWy
+gHcsk224l+xu0LE05yYRzzwe+y9RMfSu0pcI6QQedx6jW5rGfHLkZkGNoKh+1yHLze50j3
+ocWJRfNFnAhoiUDUBNdV+zkTiUPdvtwpDhc2mPEi631D+PMvXCvPZQxY+H/dP+U3IaSqc1
+2Sr2rGv4cyxfiQBY5rg1ukdFiZYgboJXf3UZ0Egh2LBPi82pbtGnyxH7O/4rPEWe9amQsd
+H0AqfogWhUrUWfmeQN8/qKs7VVTIsfmtrQPtwA7xDB13mlpsscK0d7UjxA2cyzJ7s8V1p7
+zlEUI6rbEEhK7eDc2g4dC5QYd3ZsnbOnNgj37LSMd3qwOriDuyYJQ=
+Cobra:
+sdIZ//QzplnJDsj1WeD0lYUmnI2CHgx+XOHs1WuWpDKKocUFq+oy2uxcLm6GUrJwIXV3qd
+aQ2YIEefIRl8rIR3MjFlQ2V73PPcuDJk5HLaWi5HMlgKpABSD++zsjLWvHy4+cOdMa5bKm
+oh9qbJimVHBblIdQHPuGU9xSAjFrjMj6l6M7UugVMmOUMsNNpuKxOo1pRxHhMM/jTuABgW
+KxQf3CbkNoC0ECS0zqHQ+HW90GX+6Frtziy/ZtafGzexMwFdxaZqWp2V6mYopctQ/7t/ti
+Z5N13ty/GifkVLWnhunf9Wiu23KE9CGn/z0azFSfzSsB+YyKnO0b81E7rbabu2m8cW/XVq
+NBWHSa3uZ75FLRKYyE2hUYOSN7MAEDMivggfkb4E1+nl/7bY8jLkuJdz0gxI/qUT04VsmY
+F9Vm14v2GE1rfvudwZPKJCs/5NsqjBbQUcx52dRs5WTT30VDFCvtBpJJBkR7CgcVZC3bGN
+jKZuVOcTPtGFJ4oCR6hd/uIU0mrNfgTKO572VFax1RGdr6HdjVCLXJbf9uMhnVw5B7wK9f
+1pZ8U68Lz/UvmanDakCOtc31Nw9bACRyTXMeFOdoCTdFlPexm82dOvY51tTC0jDv7EEA+3
+5QPAgCg8Z/CkfdVVKJggf9u0e5bYtavPVBhTxfDb1DanfJvIBvTis=
+Rato:
+L5fuZqPq6AstnVrEgkQ5xIxEoglOpA+rwx3F9VC0U4Ogg49njgZ/ypY0aeIUlbYILszJv9
+NoDGGmMpZVMubp3SwOmJlOM3KuHgkT0Hvlh+f+uT9Lor6KF+WZyBd4ntyslJTV2Y4meL0p
+L7B5iuUtxw5zsWHSa33VnLh0cloA3plI1e7pVYFFDOSF987DJ6ajZcSXjI0i8CEOCsJfq7
+2fbcgHs2gDFNNd3jxMttgCbi99qdYhCMhMX1GhMdNJENa2Gr7U5Brv/yNvbUe9wxvF/Zbi
+BUDROuKXKXZ354TEv6IuF7CoFZx7y/fI6SjHOf0EoecgK39ujwuNyrZgeB8QJSp3nkzIni
+Mn0tQ2aC0+T35pVz5YqduF8QpAZDdHkWKCcbxZ547eqr2pXLrQxEygqA9Zi6JuQJgeyech
+BYUKyz6QbCghmPpKqburxYsM35xxwISMbS8Su1heEzvbM8MgvwvLO/kLinOuS+oaKQVLDq
+SwIfcvm431mIJbpHGKNzm8xS6l4OFgBRRwiDaQcsnYO+DsuZqvmUCOobhjjpdF9ednd08M
+Wa7f1EM3WZ0LFHeZ9g0i5KKlYvOzJmaRJcHxF/ua/B1Imm3iWe3Ek2MEkOnWZzkgakuDhy
+b+7PWmC+E7UAzlI0KrG3IM63Jnu+W5/GtQ41CulRuCDASN3WdgXqw=
+Cobra:
+Za4Vra8+PTEQLZe15pXy3c3rjznbrP788b7trjHMYYpiYsRwJSGmW6CUTO0aLSrkpvPjPF
+q0li1wiQESFk1IIyovTgxQgKGN8S3skbpScSjU7wgiljim3ly+rfy48xKkklkzkZVLx4Sy
+GRo0pasXmwGlWIrf4431E5EJVoqMBnRvXJJJGr3mifiLsDXYi8GNgOHCUDLVKwKQWEAlxj
+RrhLEhIo9hF1NoNmZwP2ny630iADdRcBnNb8Zmzr9e71yn/5ZWMz3GVb5R/qizQBsI8jkW
+J5Zk58yqeQqTJjIgIMJNogZ++9K6BMrmTto67BGxpVbHUGb3/jR8KVQOFPJUP8x5Bea+6X
+iaWF4TCAC7FxeFYpXP8TpL8pl3vj6gjFfgNAy8YZxte/F7TBlJx4palPiJAYVREo0+Qdhz
+rT69uHjnapSn82QBucnC3w4oleC8X61Zb2pVQqcqXDGgPBKHYWVL9SrSJwYxPwZ888K0iw
+wy44JNARXpPDgIa3jGQ0OTsabkSwGfB7/e6WfhbRY8QbaGIA8WsGUB3HP3ILutiaJkCR83
+obsGJpqL6BNDWvmD5yZUUo2TJ6S0eYUhkeuqw4EztvbmZEe2JwSL2KX8D2JS7XpqpXW9ji
+0Bn8Z5QwOX3EKFbio3da0K4uLlTU1YMA/gMvf/NOd/id1UVluBcng=
+Rato:
+Kk6rbdU24PGW6t2leLQtGk+NB4Fg0qX8SK9CCFHW5Cnusc8K8bKOWLMIlQmURrZ+LZPmsj
+thKnN0PXp/7ktrWwnkUYWshmHxKpovE/PR/jFdSdma4QDf/HmTrIH4U5hEDQ4SdPY+8CjX
+KBWAnBACUnoMHdMAqJsIlbCdZ0eY2JpwlBvCJbU6qf4oeJf/Uh1UKS32YDWjZX5JszXsuY
+PcrJ9oSdtczfp/Z13QJzhiplNT1eZQHrUgJcM1lWgKJb44KF0G3dOIfvAQv5mYZY4V/0NP
+WbDb+JYAEyHLOLPBGuvC239KoeI7Nta2qOeOpLbYKPDaws5XoUnKbtPGmHgLuK7FLF8FHI
+23Uy7JRjPhHGSiuc5aTYwxFWWaWBGtU7ceb46c95e5w5NPUE14kv1DnlJiDXbb6Lzqm8mk
+a4fB37bXe9c3BylprQrKZjt6IfzCRySZmYh1DjEQyaiqhANePV7gT5faNUSiZtCJHFMePl
+dDBIFO33AJJMDDlKOXsfErQA0KPyfQjfuJUhSz+W62DfVSlWnzVj3VNNaMD0Q8BXw77976
+YJTqhgPLEhzKKmTgB+bVH0lMigc9NH1KX4kianfqPCvbo8SbPIz/XmwymRx05Fv9i8t/0g
+3fO1s+FgaVKipdRfpUDSJUOKy+mzxVaWKAbLwaB/dZkABbYoW+zjI=
