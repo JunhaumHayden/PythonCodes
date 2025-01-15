@@ -1,1 +1,5 @@
-alo brasil
+Linha 1: Este é um exemplo de texto.
+Linha 2: Estamos testando a escrita de arquivos.
+Linha 3: Python é uma linguagem poderosa.
+Linha 4: Segurança cibernética é importante.
+Linha 5: Fim do teste de escrita .
