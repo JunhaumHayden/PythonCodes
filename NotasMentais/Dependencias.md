@@ -185,3 +185,7 @@ from localpackage import script
 ````
 
 Observe que essa abordagem não executará nenhum arquivo setup.py. Pacotes com esses arquivos ainda podem ser agrupados, mas podem não ser executados corretamente no Cloud Functions.
+
+
+### Concurency
+https://medium.com/@pouyahallaj/goodbye-gil-understanding-python-3-13s-free-threaded-mode-63189ba30aec

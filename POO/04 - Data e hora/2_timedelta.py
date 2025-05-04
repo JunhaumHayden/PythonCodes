@@ -23,7 +23,10 @@ else:
 
 # operando com dias
 print(date.today() - timedelta(days=1))
+
+
 # operando apenas com a hora
+# timedelta não opera apenas com a hora, mas sim com data e hora. Necessario operar com um objeto datetime
 # No modulo datetime precisa passar uma data hora completa arbitraria para que seja possivel operar apenas a hora
 resultado = datetime(2023, 7, 25, 10, 19, 20) - timedelta(hours=1)
 # apos operar exibir o resultado com a funcao .time() que retorna apenas a hora

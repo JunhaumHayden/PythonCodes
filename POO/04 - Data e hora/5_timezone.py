@@ -1,5 +1,7 @@
 from datetime import datetime, timedelta, timezone
 
+
+# Exemplo de data e hora com timezone sem a biblioteca pytz
 data_oslo = datetime.now(timezone(timedelta(hours=2)))
 data_sao_paulo = datetime.now(timezone(timedelta(hours=-3)))
 
