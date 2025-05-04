@@ -406,3 +406,10 @@ FodyWeavers.xsd
 
 # JetBrains Rider
 *.sln.iml
+.idea
+.idea/
+.idea_modules/
+.idea/**
+# Diretórios
+img/
+vendor/
