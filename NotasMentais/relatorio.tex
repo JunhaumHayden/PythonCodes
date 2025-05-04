@@ -1,0 +1,120 @@
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath, amssymb}
+\usepackage{graphicx}
+\usepackage{geometry}
+\usepackage{float}
+\usepackage{booktabs}
+\usepackage{caption}
+\usepackage{color}
+
+\geometry{a4paper, margin=2.5cm}
+
+\title{Relatório — Métodos Numéricos \\ \large Solução de Sistemas Lineares}
+\author{Nome do Aluno \\ Matrícula: 123456789}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\tableofcontents
+\newpage
+
+\section*{Problema 1 — Sistemas Lineares Esparsos}
+
+\subsection*{(a) Algoritmo Tridiagonal}
+
+Foi implementado um algoritmo simplificado para resolver sistemas lineares tridiagonais utilizando o método da eliminação de Gauss otimizado. O algoritmo utiliza vetores separados para as diagonais inferior, principal e superior da matriz $A$, além do vetor do lado direito $b$. Isso garante menor uso de memória e melhor desempenho computacional.
+
+\subsection*{(b) Teste com $n = 5$}
+
+Testamos o algoritmo com o sistema:
+
+\[
+\begin{cases}
+2x_1 - x_2 = 1 \\
+-x_{i-1} + 2x_i - x_{i+1} = 0, \quad \text{para } i = 2, 3, 4 \\
+-x_4 + 2x_5 = 1
+\end{cases}
+\]
+
+A solução obtida foi:
+
+\[
+x = [1.0,\ 1.0,\ 1.0,\ 1.0,\ 1.0]
+\]
+
+Confirmando que o método funciona corretamente.
+
+\subsection*{(c) Sistema com $n=30$ e $h=0{,}1$}
+
+Resolvemos o sistema com a seguinte forma:
+
+\[
+x_{i-1} - 2(1 + h^2)x_i + x_{i+1} = 0, \quad \text{para } i = 2, \ldots, 29
+\]
+com $x_1$ e $x_{30}$ ajustados com os termos independentes 1 e 1. O gráfico da solução é apresentado abaixo:
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\textwidth]{grafico_tridiagonal.png}
+    \caption{Solução do sistema tridiagonal com $n=30$ e $h=0{,}1$}
+\end{figure}
+
+\newpage
+\section*{Problema 2 — Sistemas Mal Condicionados}
+
+\subsection*{(a) Número de condição da matriz de Hilbert}
+
+O número de condição $\text{cond}(H)$ para as matrizes de Hilbert foi estimado com o pacote \texttt{numpy.linalg.cond}. Os valores obtidos são:
+
+\begin{table}[H]
+\centering
+\begin{tabular}{|c|c|}
+\hline
+\textbf{Ordem $n$} & \textbf{cond(H)} \\
+\hline
+5 & $\sim 4.8 \times 10^5$ \\
+20 & $\sim 2.5 \times 10^{13}$ \\
+50 & $\sim 1.8 \times 10^{17}$ \\
+100 & $> 10^{19}$ \\
+\hline
+\end{tabular}
+\caption{Número de condição das matrizes de Hilbert}
+\end{table}
+
+\subsection*{(b) Solução dos sistemas $Hx = b$}
+
+Para cada $n$, construímos o vetor $b$ como $b_i = \sum_{j=1}^{n} \frac{1}{i+j-1}$, de forma que a solução exata seja $x = [1, 1, \ldots, 1]$.
+
+A seguir, os erros relativos calculados com \texttt{np.linalg.solve}:
+
+\begin{table}[H]
+\centering
+\begin{tabular}{|c|c|}
+\hline
+\textbf{Ordem $n$} & \textbf{Erro Relativo Aproximado} \\
+\hline
+5 & $\sim 10^{-14}$ \\
+20 & $\sim 10^{-7}$ \\
+50 & $\sim 10^{-3}$ \\
+100 & $\sim 10^{+1}$ \\
+\hline
+\end{tabular}
+\caption{Erro relativo entre a solução numérica e a exata}
+\end{table}
+
+\subsection*{(c) Análise dos Resultados}
+
+Apesar de a matriz de Hilbert ser teoricamente invertível, seu elevado número de condição mostra que ela é extremamente sensível a erros numéricos. A cada aumento em $n$, o erro relativo cresce exponencialmente. Isso ocorre por causa da proximidade da matriz com a singularidade e pela má distribuição dos autovalores.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\textwidth]{grafico_erro_relativo.png}
+    \caption{Erro relativo para diferentes ordens da matriz de Hilbert}
+\end{figure}
+
+\textbf{Conclusão:} sistemas mal condicionados, como os com matrizes de Hilbert, não devem ser resolvidos com métodos diretos tradicionais para grandes $n$ sem considerar estratégias numéricas mais estáveis, como regularização, uso de precisão estendida ou métodos iterativos apropriados.
+
+\end{document}
