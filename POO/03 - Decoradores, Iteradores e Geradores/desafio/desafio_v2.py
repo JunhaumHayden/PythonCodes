@@ -1,14 +1,8 @@
 import textwrap
 from abc import ABC, abstractclassmethod, abstractproperty
 from datetime import datetime
-import datetime
 
 
-# Passar mensagem apos atingir o limite de transacoes
-#Apresentar extrato com data e hora de todas as transacoes
-
-# iterador personalizado -> Para iterar sobre todas as contas do banco, retornando informaçoes de cada conta(numero, saldo atual, etc)
-# Necessario criar uma classe para instanciar o iterador
 class ContasIterador:
     def __init__(self, contas):
         self.contas = contas
@@ -31,7 +25,7 @@ class ContasIterador:
         finally:
             self._index += 1
 
-# Implementar o bloquio de transacoes apos exceder o limite de transacoes do dia
+
 class Cliente:
     def __init__(self, endereco):
         self.endereco = endereco
@@ -39,11 +33,6 @@ class Cliente:
         self.indice_conta = 0
 
     def realizar_transacao(self, conta, transacao):
-        # transacao.registrar(conta) # Implementacao antiga
-        if len(conta.historico.transacoes_do_dia()) >= 2: #condicao para saber o numero de transacoes do dia atraves do tamanho da lista de transacoes gerado pelo metodo transacoes_do_dia() da classe Historico
-            print("\n#### Limite excedido para o numero de transacoes para hoje! ###")
-            return
-        
         transacao.registrar(conta)
 
     def adicionar_conta(self, conta):
@@ -150,11 +139,11 @@ class ContaCorrente(Conta):
             Titular:\t{self.cliente.nome}
         """
 
-#Estabeler um limite de 10 transacoes diasrias para cada conta
+
 class Historico:
     def __init__(self):
         self._transacoes = []
-    # property para retornar as transacoes
+
     @property
     def transacoes(self):
         return self._transacoes
@@ -164,30 +153,15 @@ class Historico:
             {
                 "tipo": transacao.__class__.__name__,
                 "valor": transacao.valor,
-                #"data": datetime.utcnow().strftime("%d-%m-%Y %H:%M:%S")
-                "data": datetime.datetime.now(datetime.timezone.utc).strftime("%d-%m-%Y %H:%M:%S")
+                "data": datetime.now().strftime("%d-%m-%Y %H:%M:%s"),
             }
         )
-# gerador de relatorios -> Para permitir iterar sobre as transacoes de uma conta e retorne, uma a uma, as transacoes qwue forsm realizadas. Tambem deve permitir filtro por tipo de transacao (apenas saques ou apenas depositos). Não esta implementado no menu de opcoes as entradas.
-    #Implementar o gerador
+
     def gerar_relatorio(self, tipo_transacao=None):
-        print(tipo_transacao)
         for transacao in self._transacoes:
-            print(transacao)
-            print(transacao["tipo"].lower())
             if tipo_transacao is None or transacao["tipo"].lower() == tipo_transacao.lower():
                 yield transacao
 
-    #Implementar uma lista com as transacoes do dia
-    def transacoes_do_dia(self):
-        #data_atual = datetime.utcnow().date() #Formato obsolento
-        data_atual =  datetime.datetime.now(datetime.timezone.utc).date() #.date() retorna apenas a data sem a hora
-        transacoes = [] # lista para receber as transacoes do dia
-        for transacao in self._transacoes: #percorrendo as transacoes da classe
-            data_transacao = datetime.strptime(transacao["data"], "%d-%m-%Y %H:%M:%S").date() # variavel de contexto para recuperar a data do atributo de transacoes da classe em cada transacao da lista e armazena no mesmo formato da variavel data_atual, .date() para capturar apenas a data sem a hora
-            if data_atual == data_transacao: # verificando a condicao para adicionar na lista
-                transacoes.append(transacao)
-        return transacoes
 
 class Transacao(ABC):
     @property
@@ -229,12 +203,11 @@ class Deposito(Transacao):
         if sucesso_transacao:
             conta.historico.adicionar_transacao(self)
 
-# decorador de log -> para registrar a data e hora a cadas transacao e o tipo de transacao aplicado para todas as funcoes de transacsao(deposito, saque, criacao de conta).
-#Necessario criar a funcao para capturar a data e hora e exbir o nome da funcao
+
 def log_transacao(func):
     def envelope(*args, **kwargs):
         resultado = func(*args, **kwargs)
-        print(f"{datetime.datetime.now(datetime.timezone.utc)}: {func.__name__.upper()}")
+        print(f"{datetime.now()}: {func.__name__.upper()}")
         return resultado
 
     return envelope
@@ -267,13 +240,11 @@ def recuperar_conta_cliente(cliente):
     # FIXME: não permite cliente escolher a conta
     return cliente.contas[0]
 
-# Decorar as funcoes que vao consumir o decorador
+
 @log_transacao
 def depositar(clientes):
     cpf = input("Informe o CPF do cliente: ")
     cliente = filtrar_cliente(cpf, clientes)
-    print(cliente)
-    print("###########################")
 
     if not cliente:
         print("\n@@@ Cliente não encontrado! @@@")
@@ -322,12 +293,11 @@ def exibir_extrato(clientes):
         return
 
     print("\n================ EXTRATO ================")
-    # atualizando a implementacao para utilizar o gerador definido na classe Historico
     extrato = ""
     tem_transacao = False
     for transacao in conta.historico.gerar_relatorio(tipo_transacao="saque"):
         tem_transacao = True
-        extrato += f"\n{transacao['data']}\n{transacao['tipo']}:\n\tR$ {transacao['valor']:.2f}"
+        extrato += f"\n{transacao['tipo']}:\n\tR$ {transacao['valor']:.2f}"
 
     if not tem_transacao:
         extrato = "Não foram realizadas movimentações"
@@ -372,7 +342,7 @@ def criar_conta(numero_conta, clientes, contas):
 
     print("\n=== Conta criada com sucesso! ===")
 
-# Implementar a utilizacao da Classe do Iterador
+
 def listar_contas(contas):
     for conta in ContasIterador(contas):
         print("=" * 100)
