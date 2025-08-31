@@ -2,7 +2,7 @@ import os
 import logging
 from dotenv import load_dotenv
 
-from db_conection.db_conn import DBConnection
+from database.postgre.db_conection.db_conn import DBConnection
 
 # Carregar variáveis do arquivo .env
 load_dotenv()

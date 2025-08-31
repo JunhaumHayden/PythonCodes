@@ -64,12 +64,51 @@ Caiu direto no banco padrão postgres como usuário postgres:
 postgres=#
 ```
 
-
 Resumindo:
 
 sudo -i -u postgres && psql → conecta como superusuário direto.
 
 psql -U python -d mylessons -h localhost → conecta com seu usuário de projeto.
+
+Comandos úteis nesse modo
+
+Dentro do psql:
+
+Listar bancos de dados:
+```bash
+\l
+
+```
+Conectar em um banco específico:
+```bash
+\c mylessons
+
+```
+Listar schemas:
+```bash
+```
+Listar tabelas:
+```bash
+\dn
+
+```
+Sair do psql:
+```bash
+\q
+
+```
+Esse acesso como postgres é importante porque te dá controle total para:
+
+Criar usuários (CREATE ROLE ...).
+
+Dar permissões (GRANT ...).
+
+Alterar schemas (ALTER SCHEMA ...).
+
+Ajustar o search_path de usuários (ALTER ROLE ...).
+
+⚠️ Mas para o dia a dia de desenvolvimento você deve usar seu usuário python — só use postgres quando precisar de privilégios de administração.
+
 
 ```bash
 ```
