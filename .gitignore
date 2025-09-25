@@ -413,3 +413,4 @@ FodyWeavers.xsd
 # Diretórios
 img/
 vendor/
+.DS_Store
