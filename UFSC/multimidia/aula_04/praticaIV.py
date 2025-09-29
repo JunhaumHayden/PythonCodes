@@ -34,7 +34,7 @@ if __name__ == "__main__":
     img = Image.open(filepath)
     
     # Indique a matrrícula dos alunos do grupo na lista abaixo
-    matriculas = [17100532,21220183]
+    matriculas = [23100455]
     
     
     # Geração do arquivo Cuif.1, converte o arquivo Cuif.1 em BMP, e calcula o PSNR

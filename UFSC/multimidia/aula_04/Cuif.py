@@ -82,21 +82,21 @@ class Cuif:
         self.file_stream +=struct.pack('%sB'%Y.size,*Y.flatten('F'))
         self.file_stream +=struct.pack('%sB'%Y.size,*Cb.flatten('F'))
         self.file_stream +=struct.pack('%sB'%Y.size,*Cr.flatten('F'))
-        return ColorSpace.convertToRGB(Y,Cb,Cr)
+        return ColorSpace.convertToRGB(Y, Cb, Cr)
 
     # Recebe a imagem e a codifica em CUIF.4. Ou seja, converte a imagem em Y,Cb,Cr e depois compacta com RLE
     # Retorna a imagem decodificada depois de descompactada RLE e convertida para RGB
     def generateCUIF4(self,img):
         (Y,Cb,Cr) = ColorSpace.convertToYCbCr(img)
-        compressed = RLE.compress(Y,Cb,Cr)
+        compressed = RLE.compress(Y, Cb, Cr)
         self.file_stream +=struct.pack('%sB'%len(compressed),*compressed)
         
         # Etapas para descompactar e codificar a imagem em RGB
         data = RLE.decompress(compressed) 
         width = img.size[0]
         height = img.size[1]
-        (Y,Cb,Cr) = ColorSpace.array2YCbCr(data,width,height)
-        return ColorSpace.convertToRGB(Y,Cb,Cr)
+        (Y,Cb,Cr) = ColorSpace.array2YCbCr(data, width, height)
+        return ColorSpace.convertToRGB(Y, Cb, Cr)
     
 
     # Método estático que criar uma imagem CUIF na memória a partir de um arquivo CUIF
@@ -185,7 +185,7 @@ class Cuif:
             for j in range(height):
                 Cr[j][i] = struct.unpack('B', bmp.read(1))[0]
 
-        img=ColorSpace.convertToRGB(Y,Cb,Cr)
+        img= ColorSpace.convertToRGB(Y, Cb, Cr)
         return img
     
     # Método estático que lê o raster (bitmap) para o formato CUIF.4
@@ -202,8 +202,8 @@ class Cuif:
             else:
                 break
         data = RLE.decompress(compressed) 
-        (Y,Cb,Cr) = ColorSpace.array2YCbCr(data,width,height)
-        img=ColorSpace.convertToRGB(Y,Cb,Cr)
+        (Y,Cb,Cr) = ColorSpace.array2YCbCr(data, width, height)
+        img= ColorSpace.convertToRGB(Y, Cb, Cr)
         return img
 
 
