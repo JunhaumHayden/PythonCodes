@@ -414,3 +414,9 @@ FodyWeavers.xsd
 img/
 vendor/
 .DS_Store
+
+# Ignorar arquivos de imagem e PDF da pasta multimidia
+UFSC/multimidia/**/*.bmp
+UFSC/multimidia/**/*.cuif
+UFSC/multimidia/**/*.pdf
+
