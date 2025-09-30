@@ -44,6 +44,30 @@ def MSE(original, decoded):
         return 0
     return sum_squared_error / nsymbols
 
+def MAE(original, decoded):
+    """
+    Calcula o Mean Absolute Error (MAE) entre duas imagens.
+    """
+    sum_absolute_error = 0
+    # Ensure images have the same dimensions
+    if original.size != decoded.size:
+        raise ValueError("As imagens devem ter as mesmas dimensões.")
+
+    width, height = original.size
+    # Assuming RGB images, 3 color channels
+    nsymbols = width * height * 3
+
+    for i in range(width):
+        for j in range(height):
+            original_r, original_g, original_b = original.getpixel((i, j))
+            decoded_r, decoded_g, decoded_b = decoded.getpixel((i, j))
+            sum_absolute_error += abs(original_r - decoded_r) + abs(original_g - decoded_g) + abs(original_b - decoded_b)
+
+    # Avoid division by zero if image is empty
+    if nsymbols == 0:
+        return 0
+    return sum_absolute_error / nsymbols
+
 if __name__ == "__main__":
     filepath = 'lena.bmp'
     img = Image.open(filepath)
